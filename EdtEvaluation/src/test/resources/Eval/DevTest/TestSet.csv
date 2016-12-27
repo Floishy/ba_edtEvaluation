@@ -1,0 +1,5 @@
+Movie;Release date;DBpedia_URI;Label;id
+Almost Famous;9/13/00 12:00 AM;http://dbpedia.org/resource/Almost_Famous;good;0
+American Hustle;12/13/13 12:00 AM;http://dbpedia.org/resource/American_Hustle;good;0
+The Killing Jar;3/19/10 12:00 AM;http://dbpedia.org/resource/The_Killing_Jar_(film);bad;0
+The Omega Code;10/15/99 12:00 AM;http://dbpedia.org/resource/The_Omega_Code;bad;0

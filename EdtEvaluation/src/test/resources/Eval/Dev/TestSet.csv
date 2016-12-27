@@ -1,0 +1,8 @@
+Movie;Release date;DBpedia_URI;Label;id
+Almost Famous;9/13/00 12:00 AM;http://dbpedia.org/resource/Almost_Famous;good;0
+American Hustle;12/13/13 12:00 AM;http://dbpedia.org/resource/American_Hustle;good;0
+Apocalypse Now;8/3/01 12:00 AM;http://dbpedia.org/resource/Apocalypse_Now;good;0
+Glitter;9/21/01 12:00 AM;http://dbpedia.org/resource/Glitter_(film);bad;0
+I Woke Up Early the Day I Died;9/3/99 12:00 AM;http://dbpedia.org/resource/I_Woke_Up_Early_The_Day_I_Died;bad;0
+Mixed Nuts;12/21/94 12:00 AM;http://dbpedia.org/resource/Mixed_Nuts;bad;0
+

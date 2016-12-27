@@ -1,0 +1,7 @@
+Movie;Release date;DBpedia_URI;"Label";id
+4 Months, 3 Weeks and 2 Days;1/23/08 12:00 AM;http://dbpedia.org/resource/4_Months,_3_Weeks_and_2_Days;"good";1601.0
+Ratatouille;6/29/07 12:00 AM;http://dbpedia.org/resource/Ratatouille_(film);"good";1602.0
+Killer of Sheep;3/30/07 12:00 AM;http://dbpedia.org/resource/Killer_of_Sheep;"bad";1603.0
+Chicken Run;6/21/00 12:00 AM;http://dbpedia.org/resource/Chicken_Run;"bad";1618.0
+Toy Story 2;11/24/99 12:00 AM;http://dbpedia.org/resource/Toy_Story_2;"bad";1619.0
+All About My Mother;11/19/99 12:00 AM;http://dbpedia.org/resource/All_About_My_Mother;"bad";1620.0

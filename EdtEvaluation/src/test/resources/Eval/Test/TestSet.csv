@@ -1,0 +1,601 @@
+"Movie";"Release date";"DBpedia_URI";"Label";"id"
+"Born Romantic";9/28/01 12:00 AM;"http://dbpedia.org/resource/Born_Romantic";"good";501.0
+"Braveheart";5/24/95 12:00 AM;"http://dbpedia.org/resource/Braveheart";"good";502.0
+"Down Terrace";10/15/10 12:00 AM;"http://dbpedia.org/resource/Down_Terrace";"good";503.0
+"End of Watch";9/21/12 12:00 AM;"http://dbpedia.org/resource/End_of_Watch";"good";504.0
+"eXistenZ";4/23/99 12:00 AM;"http://dbpedia.org/resource/Existenz";"good";505.0
+"Four Lions";11/5/10 12:00 AM;"http://dbpedia.org/resource/Four_Lions";"good";506.0
+"Friends with Money";4/7/06 12:00 AM;"http://dbpedia.org/resource/Friends_with_Money";"good";507.0
+"Henry Fool";6/19/98 12:00 AM;"http://dbpedia.org/resource/Henry_Fool";"good";508.0
+"Iraq for Sale: The War Profiteers";9/8/06 12:00 AM;"http://dbpedia.org/resource/Iraq_for_Sale:_The_War_Profiteers";"good";509.0
+"Potiche";3/25/11 12:00 AM;"http://dbpedia.org/resource/Potiche";"good";510.0
+"Requiem for a Dream";10/6/00 12:00 AM;"http://dbpedia.org/resource/Requiem_for_a_Dream";"good";511.0
+"Rise of the Planet of the Apes";8/5/11 12:00 AM;"http://dbpedia.org/resource/Rise_of_the_Planet_of_the_Apes";"good";512.0
+"Smash His Camera";7/30/10 12:00 AM;"http://dbpedia.org/resource/Smash_His_Camera";"good";513.0
+"Son of the Bride";3/22/02 12:00 AM;"http://dbpedia.org/resource/Son_of_the_Bride";"good";514.0
+"The Edukators";7/22/05 12:00 AM;"http://dbpedia.org/resource/The_Edukators";"good";515.0
+"The Girl on the Train";1/22/10 12:00 AM;"http://dbpedia.org/resource/The_Girl_on_the_Train";"good";516.0
+"The Go Master";3/14/07 12:00 AM;"http://dbpedia.org/resource/The_Go_Master";"good";517.0
+"The Italian Job";5/30/03 12:00 AM;"http://dbpedia.org/resource/The_Italian_Job";"good";518.0
+"The Place Beyond the Pines";3/29/13 12:00 AM;"http://dbpedia.org/resource/The_Place_Beyond_the_Pines";"good";519.0
+"The School of Flesh";2/26/99 12:00 AM;"http://dbpedia.org/resource/The_School_of_Flesh";"good";520.0
+"The Secret Life of Words";12/15/06 12:00 AM;"http://dbpedia.org/resource/The_Secret_Life_of_Words";"good";521.0
+"The Valet";4/20/07 12:00 AM;"http://dbpedia.org/resource/The_Valet";"good";522.0
+"The War Zone";12/10/99 12:00 AM;"http://dbpedia.org/resource/The_War_Zone";"good";523.0
+"This Filthy World";11/24/06 12:00 AM;"http://dbpedia.org/resource/This_Filthy_World";"good";524.0
+"To Die Like a Man";4/8/11 12:00 AM;"http://dbpedia.org/resource/To_Die_Like_a_Man";"good";525.0
+"Valentino: The Last Emperor";3/18/09 12:00 AM;"http://dbpedia.org/resource/Valentino:_The_Last_Emperor";"good";526.0
+"War Dance";11/9/07 12:00 AM;"http://dbpedia.org/resource/War/Dance";"good";527.0
+"A Guide to Recognizing Your Saints";9/29/06 12:00 AM;"http://dbpedia.org/resource/A_Guide_to_Recognizing_Your_Saints";"good";528.0
+"A League of Their Own";7/1/92 12:00 AM;"http://dbpedia.org/resource/A_League_of_Their_Own";"good";529.0
+"As Good as It Gets";12/23/97 12:00 AM;"http://dbpedia.org/resource/As_Good_as_It_Gets";"good";530.0
+"Bad Lieutenant";11/20/92 12:00 AM;"http://dbpedia.org/resource/Bad_Lieutenant";"good";531.0
+"Berlin Babylon";10/17/01 12:00 AM;"http://dbpedia.org/resource/Berlin_Babylon";"good";532.0
+"Brothers of the Head";7/28/06 12:00 AM;"http://dbpedia.org/resource/Brothers_of_the_Head";"good";533.0
+"Cairo Time";8/6/10 12:00 AM;"http://dbpedia.org/resource/Cairo_Time";"good";534.0
+"Children of Invention";3/12/10 12:00 AM;"http://dbpedia.org/resource/Children_of_Invention";"good";535.0
+"Confessions of a Dangerous Mind";12/31/02 12:00 AM;"http://dbpedia.org/resource/Confessions_of_a_Dangerous_Mind";"good";536.0
+"Decasia";3/19/03 12:00 AM;"http://dbpedia.org/resource/Decasia";"good";537.0
+"Die Hard 2";7/2/90 12:00 AM;"http://dbpedia.org/resource/Die_Hard_2";"good";538.0
+"Dislecksia: The Movie";10/4/13 12:00 AM;"http://dbpedia.org/resource/Dislecksia:_The_Movie";"good";539.0
+"Fast Five";4/29/11 12:00 AM;"http://dbpedia.org/resource/Fast_Five";"good";540.0
+"Fatal Attraction";9/18/87 12:00 AM;"http://dbpedia.org/resource/Fatal_Attraction";"good";541.0
+"Finding Neverland";11/12/04 12:00 AM;"http://dbpedia.org/resource/Finding_Neverland";"good";542.0
+"Flow: For Love of Water";9/12/08 12:00 AM;"http://dbpedia.org/resource/Flow:_For_Love_of_Water";"good";543.0
+"Forgetting Sarah Marshall";4/18/08 12:00 AM;"http://dbpedia.org/resource/Forgetting_Sarah_Marshall";"good";544.0
+"Garbage Dreams";1/6/10 12:00 AM;"http://dbpedia.org/resource/Garbage_Dreams";"good";545.0
+"Kill List";2/3/12 12:00 AM;"http://dbpedia.org/resource/Kill_List";"good";546.0
+"Lethal Weapon";3/6/87 12:00 AM;"http://dbpedia.org/resource/Lethal_Weapon";"good";547.0
+"Life and Debt";6/16/01 12:00 AM;"http://dbpedia.org/resource/Life_and_Debt";"good";548.0
+"London River";12/9/11 12:00 AM;"http://dbpedia.org/resource/London_River";"good";549.0
+"Nowhere Boy";10/8/10 12:00 AM;"http://dbpedia.org/resource/Nowhere_Boy";"good";550.0
+"Open Range";8/15/03 12:00 AM;"http://dbpedia.org/resource/Open_Range";"good";551.0
+"Pianomania";11/4/11 12:00 AM;"http://dbpedia.org/resource/Pianomania";"good";552.0
+"Price Check";11/16/12 12:00 AM;"http://dbpedia.org/resource/Price_Check";"good";553.0
+"RoboCop";7/17/87 12:00 AM;"http://dbpedia.org/resource/RoboCop";"good";554.0
+"Ruby Sparks";7/25/12 12:00 AM;"http://dbpedia.org/resource/Ruby_Sparks";"good";555.0
+"Shallow Grave";2/10/95 12:00 AM;"http://dbpedia.org/resource/Shallow_Grave";"good";556.0
+"Sound of My Voice";4/27/12 12:00 AM;"http://dbpedia.org/resource/Sound_of_My_Voice";"good";557.0
+"Bandslam";8/14/09 12:00 AM;"http://dbpedia.org/resource/Bandslam";"good";558.0
+"Beautiful Boxer";1/21/05 12:00 AM;"http://dbpedia.org/resource/Beautiful_Boxer";"good";559.0
+"Before the Fall";10/7/05 12:00 AM;"http://dbpedia.org/resource/Before_the_Fall";"good";560.0
+"Behind the Mask: The Rise of Leslie Vernon";3/16/07 12:00 AM;"http://dbpedia.org/resource/Behind_the_Mask:_The_Rise_of_Leslie_Vernon";"good";561.0
+"Bend It Like Beckham";3/12/03 12:00 AM;"http://dbpedia.org/resource/Bend_It_Like_Beckham";"good";562.0
+"Black Butterflies";3/2/12 12:00 AM;"http://dbpedia.org/resource/Black_Butterflies";"good";563.0
+"Ever After";7/31/98 12:00 AM;"http://dbpedia.org/resource/Ever_After";"good";564.0
+"Fight Club";10/15/99 12:00 AM;"http://dbpedia.org/resource/Fight_Club";"good";565.0
+"Ghost in the Shell 2: Innocence";9/17/04 12:00 AM;"http://dbpedia.org/resource/Ghost_in_the_Shell_2:_Innocence";"good";566.0
+"Hermanas";12/6/06 12:00 AM;"http://dbpedia.org/resource/Hermanas";"good";567.0
+"Jackass Number Two";9/22/06 12:00 AM;"http://dbpedia.org/resource/Jackass_Number_Two";"good";568.0
+"Let the Bullets Fly";3/2/12 12:00 AM;"http://dbpedia.org/resource/Let_the_Bullets_Fly";"good";569.0
+"Me You Them";3/2/01 12:00 AM;"http://dbpedia.org/resource/Me_You_Them";"good";570.0
+"Mean Girls";4/30/04 12:00 AM;"http://dbpedia.org/resource/Mean_Girls";"good";571.0
+"Mission: Impossible III";5/5/06 12:00 AM;"http://dbpedia.org/resource/Mission:_Impossible_III";"good";572.0
+"One Hundred Mornings";3/25/11 12:00 AM;"http://dbpedia.org/resource/One_Hundred_Mornings";"good";573.0
+"Pitch Perfect";9/28/12 12:00 AM;"http://dbpedia.org/resource/Pitch_Perfect";"good";574.0
+"Seven Psychopaths";10/12/12 12:00 AM;"http://dbpedia.org/resource/Seven_Psychopaths";"good";575.0
+"Shadow Magic";4/6/01 12:00 AM;"http://dbpedia.org/resource/Shadow_Magic";"good";576.0
+"SherryBaby";9/8/06 12:00 AM;"http://dbpedia.org/resource/Sherrybaby";"good";577.0
+"Small Town Murder Songs";7/1/11 12:00 AM;"http://dbpedia.org/resource/Small_Town_Murder_Songs";"good";578.0
+"So Close";9/12/03 12:00 AM;"http://dbpedia.org/resource/So_Close";"good";579.0
+"Son of Rambow";5/2/08 12:00 AM;"http://dbpedia.org/resource/Son_of_Rambow";"good";580.0
+"Spanking the Monkey";7/15/94 12:00 AM;"http://dbpedia.org/resource/Spanking_the_Monkey";"good";581.0
+"The Girlfriend Experience";5/22/09 12:00 AM;"http://dbpedia.org/resource/The_Girlfriend_Experience";"good";582.0
+"The SpongeBob SquarePants Movie";11/19/04 12:00 AM;"http://dbpedia.org/resource/The_SpongeBob_SquarePants_Movie";"good";583.0
+"The Way Back";1/21/11 12:00 AM;"http://dbpedia.org/resource/The_Way_Back";"good";584.0
+"Trading Places";6/8/83 12:00 AM;"http://dbpedia.org/resource/Trading_Places";"good";585.0
+"Trembling Before G-d";10/24/01 12:00 AM;"http://dbpedia.org/resource/Trembling_Before_G-d";"good";586.0
+"Tupac: Resurrection";11/14/03 12:00 AM;"http://dbpedia.org/resource/Tupac:_Resurrection";"good";587.0
+"Two Girls and a Guy";4/24/98 12:00 AM;"http://dbpedia.org/resource/Two_Girls_and_a_Guy";"good";588.0
+"Two Women";7/21/00 12:00 AM;"http://dbpedia.org/resource/Two_Women";"good";589.0
+"Unmade Beds";9/2/09 12:00 AM;"http://dbpedia.org/resource/Unmade_Beds";"good";590.0
+"Unsettled";5/9/08 12:00 AM;"http://dbpedia.org/resource/Unsettled";"good";591.0
+"Voices of Iraq";10/29/04 12:00 AM;"http://dbpedia.org/resource/Voices_of_Iraq";"good";592.0
+"Waiting for Armageddon";1/8/10 12:00 AM;"http://dbpedia.org/resource/Waiting_for_Armageddon";"good";593.0
+"Wish Me Away";6/1/12 12:00 AM;"http://dbpedia.org/resource/Wish_Me_Away";"good";594.0
+"A Room for Romeo Brass";10/27/00 12:00 AM;"http://dbpedia.org/resource/A_Room_for_Romeo_Brass";"good";595.0
+"Alone with Her";1/17/07 12:00 AM;"http://dbpedia.org/resource/Alone_with_Her";"good";596.0
+"Animal Factory";10/13/00 12:00 AM;"http://dbpedia.org/resource/Animal_Factory";"good";597.0
+"Cadillac Records";12/5/08 12:00 AM;"http://dbpedia.org/resource/Cadillac_Records";"good";598.0
+"Clerks II";7/21/06 12:00 AM;"http://dbpedia.org/resource/Clerks_II";"good";599.0
+"Coco Before Chanel";9/25/09 12:00 AM;"http://dbpedia.org/resource/Coco_Before_Chanel";"good";600.0
+"Crooklyn";5/13/94 12:00 AM;"http://dbpedia.org/resource/Crooklyn";"good";601.0
+"Dan in Real Life";10/26/07 12:00 AM;"http://dbpedia.org/resource/Dan_in_Real_Life";"good";602.0
+"Darkman";8/24/90 12:00 AM;"http://dbpedia.org/resource/Darkman";"good";603.0
+"Dirty Dancing";8/25/87 12:00 AM;"http://dbpedia.org/resource/Dirty_Dancing";"good";604.0
+"Dzi Croquettes";11/18/11 12:00 AM;"http://dbpedia.org/resource/Dzi_Croquettes";"good";605.0
+"E-Dreams";1/11/02 12:00 AM;"http://dbpedia.org/resource/E-Dreams";"good";606.0
+"Favela Rising";6/2/06 12:00 AM;"http://dbpedia.org/resource/Favela_Rising";"good";607.0
+"Find Me Guilty";3/17/06 12:00 AM;"http://dbpedia.org/resource/Find_Me_Guilty";"good";608.0
+"Get Him to the Greek";6/4/10 12:00 AM;"http://dbpedia.org/resource/Get_Him_to_the_Greek";"good";609.0
+"GoldenEye";11/17/95 12:00 AM;"http://dbpedia.org/resource/GoldenEye";"good";610.0
+"Grace Is Gone";12/7/07 12:00 AM;"http://dbpedia.org/resource/Grace_Is_Gone";"good";611.0
+"I Love You Phillip Morris";12/3/10 12:00 AM;"http://dbpedia.org/resource/I_Love_You_Phillip_Morris";"good";612.0
+"If a Tree Falls: A Story of the Earth Liberation Front";6/22/11 12:00 AM;"http://dbpedia.org/resource/If_a_Tree_Falls:_A_Story_of_the_Earth_Liberation_Front";"good";613.0
+"In a Better World";4/1/11 12:00 AM;"http://dbpedia.org/resource/In_a_Better_World";"good";614.0
+"Indiana Jones and the Kingdom of the Crystal Skull";5/22/08 12:00 AM;"http://dbpedia.org/resource/Indiana_Jones_and_the_Kingdom_of_the_Crystal_Skull";"good";615.0
+"Indiana Jones and the Last Crusade";5/24/89 12:00 AM;"http://dbpedia.org/resource/Indiana_Jones_and_the_Last_Crusade";"good";616.0
+"Made in Dagenham";11/19/10 12:00 AM;"http://dbpedia.org/resource/Made_in_Dagenham";"good";617.0
+"Mississippi Burning";1/27/89 12:00 AM;"http://dbpedia.org/resource/Mississippi_Burning";"good";618.0
+"Monsters University";6/21/13 12:00 AM;"http://dbpedia.org/resource/Monsters_University";"good";619.0
+"Mystery Men";8/6/99 12:00 AM;"http://dbpedia.org/resource/Mystery_Men";"good";620.0
+"Night Catches Us";12/3/10 12:00 AM;"http://dbpedia.org/resource/Night_Catches_Us";"good";621.0
+"Panic Room";3/29/02 12:00 AM;"http://dbpedia.org/resource/Panic_Room";"good";622.0
+"Paradise: Love";4/26/13 12:00 AM;"http://dbpedia.org/resource/Paradise:_Love";"good";623.0
+"Pola X";9/8/00 12:00 AM;"http://dbpedia.org/resource/Pola_X";"good";624.0
+"Rain Man";12/16/88 12:00 AM;"http://dbpedia.org/resource/Rain_Man";"good";625.0
+"Sex and Lucia";7/12/02 12:00 AM;"http://dbpedia.org/resource/Sex_and_Lucia";"good";626.0
+"Star Trek VI: The Undiscovered Country";12/6/91 12:00 AM;"http://dbpedia.org/resource/Star_Trek_VI:_The_Undiscovered_Country";"good";627.0
+"Telling Lies in America";10/15/97 12:00 AM;"http://dbpedia.org/resource/Telling_Lies_in_America";"good";628.0
+"Tetro";6/11/09 12:00 AM;"http://dbpedia.org/resource/Tetro";"good";629.0
+"The Dead Girl";12/29/06 12:00 AM;"http://dbpedia.org/resource/The_Dead_Girl";"good";630.0
+"The Disappearance of Alice Creed";8/6/10 12:00 AM;"http://dbpedia.org/resource/The_Disappearance_of_Alice_Creed";"good";631.0
+"The Future of Food";9/14/05 12:00 AM;"http://dbpedia.org/resource/The_Future_of_Food";"good";632.0
+"The Imaginarium of Doctor Parnassus";12/25/09 12:00 AM;"http://dbpedia.org/resource/The_Imaginarium_of_Doctor_Parnassus";"good";633.0
+"The Matador";12/23/05 12:00 AM;"http://dbpedia.org/resource/The_Matador";"good";634.0
+"The Providence Effect";9/25/09 12:00 AM;"http://dbpedia.org/resource/The_Providence_Effect";"good";635.0
+"The Salt of Life";3/2/12 12:00 AM;"http://dbpedia.org/resource/The_Salt_of_Life";"good";636.0
+"The Slaughter Rule";1/8/03 12:00 AM;"http://dbpedia.org/resource/The_Slaughter_Rule";"good";637.0
+"The TV Set";4/6/07 12:00 AM;"http://dbpedia.org/resource/The_TV_Set";"good";638.0
+"The Vicious Kind";12/11/09 12:00 AM;"http://dbpedia.org/resource/The_Vicious_Kind";"good";639.0
+"When We Leave";1/28/11 12:00 AM;"http://dbpedia.org/resource/When_We_Leave";"good";640.0
+"Wild Grass";6/25/10 12:00 AM;"http://dbpedia.org/resource/Wild_Grass";"good";641.0
+"A Better Life";6/24/11 12:00 AM;"http://dbpedia.org/resource/A_Better_Life";"good";642.0
+"About Adam";5/9/01 12:00 AM;"http://dbpedia.org/resource/About_Adam";"good";643.0
+"Arctic Tale";7/25/07 12:00 AM;"http://dbpedia.org/resource/Arctic_Tale";"good";644.0
+"Dolphin Tale";9/23/11 12:00 AM;"http://dbpedia.org/resource/Dolphin_Tale";"good";645.0
+"Dreams with Sharp Teeth";6/4/08 12:00 AM;"http://dbpedia.org/resource/Dreams_with_Sharp_Teeth";"good";646.0
+"Eight Below";2/17/06 12:00 AM;"http://dbpedia.org/resource/Eight_Below";"good";647.0
+"Examined Life";2/25/09 12:00 AM;"http://dbpedia.org/resource/Examined_Life";"good";648.0
+"Film Socialisme";6/1/11 12:00 AM;"http://dbpedia.org/resource/Film_Socialisme";"good";649.0
+"Following Sean";1/13/06 12:00 AM;"http://dbpedia.org/resource/Following_Sean";"good";650.0
+"Frailty";4/12/02 12:00 AM;"http://dbpedia.org/resource/Frailty";"good";651.0
+"Freedom Writers";1/5/07 12:00 AM;"http://dbpedia.org/resource/Freedom_Writers";"good";652.0
+"Fright Night";8/19/11 12:00 AM;"http://dbpedia.org/resource/Fright_Night";"good";653.0
+"Gattaca";10/24/97 12:00 AM;"http://dbpedia.org/resource/Gattaca";"good";654.0
+"In Search of a Midnight Kiss";8/1/08 12:00 AM;"http://dbpedia.org/resource/In_Search_of_a_Midnight_Kiss";"good";655.0
+"Killing Them Softly";11/30/12 12:00 AM;"http://dbpedia.org/resource/Killing_Them_Softly";"good";656.0
+"Living Out Loud";10/30/98 12:00 AM;"http://dbpedia.org/resource/Living_Out_Loud";"good";657.0
+"Looney Tunes: Back in Action";11/14/03 12:00 AM;"http://dbpedia.org/resource/Looney_Tunes:_Back_in_Action";"good";658.0
+"Love in the Buff";3/30/12 12:00 AM;"http://dbpedia.org/resource/Love_in_the_Buff";"good";659.0
+"Lymelife";4/8/09 12:00 AM;"http://dbpedia.org/resource/Lymelife";"good";660.0
+"Mongolian Ping Pong";4/21/06 12:00 AM;"http://dbpedia.org/resource/Mongolian_Ping_Pong";"good";661.0
+"Napoleon Dynamite";6/11/04 12:00 AM;"http://dbpedia.org/resource/Napoleon_Dynamite";"good";662.0
+"Northfork";7/11/03 12:00 AM;"http://dbpedia.org/resource/Northfork";"good";663.0
+"Orgasm Inc.";2/11/11 12:00 AM;"http://dbpedia.org/resource/Orgasm_Inc.";"good";664.0
+"Princesas";8/23/06 12:00 AM;"http://dbpedia.org/resource/Princesas";"good";665.0
+"Sky Captain and the World of Tomorrow";9/17/04 12:00 AM;"http://dbpedia.org/resource/Sky_Captain_and_the_World_of_Tomorrow";"good";666.0
+"Soundtrack for a Revolution";1/22/10 12:00 AM;"http://dbpedia.org/resource/Soundtrack_for_a_Revolution";"good";667.0
+"Stage Beauty";10/8/04 12:00 AM;"http://dbpedia.org/resource/Stage_Beauty";"good";668.0
+"Star Trek: Insurrection";12/11/98 12:00 AM;"http://dbpedia.org/resource/Star_Trek:_Insurrection";"good";669.0
+"That Man: Peter Berlin";1/13/06 12:00 AM;"http://dbpedia.org/resource/That_Man:_Peter_Berlin";"good";670.0
+"The Hedgehog";8/19/11 12:00 AM;"http://dbpedia.org/resource/The_Hedgehog";"good";671.0
+"The Horse Boy";9/30/09 12:00 AM;"http://dbpedia.org/resource/The_Horse_Boy";"good";672.0
+"The Mystic Masseur";5/3/02 12:00 AM;"http://dbpedia.org/resource/The_Mystic_Masseur";"good";673.0
+"The Notorious Bettie Page";4/14/06 12:00 AM;"http://dbpedia.org/resource/The_Notorious_Bettie_Page";"good";674.0
+"The Other Guys";8/6/10 12:00 AM;"http://dbpedia.org/resource/The_Other_Guys";"good";675.0
+"The Tic Code";8/4/00 12:00 AM;"http://dbpedia.org/resource/The_Tic_Code";"good";676.0
+"You Kill Me";6/22/07 12:00 AM;"http://dbpedia.org/resource/You_Kill_Me";"good";677.0
+"A Common Thread";5/27/05 12:00 AM;"http://dbpedia.org/resource/A_Common_Thread";"good";678.0
+"A Perfect Getaway";8/7/09 12:00 AM;"http://dbpedia.org/resource/A_Perfect_Getaway";"good";679.0
+"Alien: Resurrection";11/26/97 12:00 AM;"http://dbpedia.org/resource/Alien_Resurrection";"good";680.0
+"Burn After Reading";9/12/08 12:00 AM;"http://dbpedia.org/resource/Burn_After_Reading";"good";681.0
+"Cachorro";11/5/04 12:00 AM;"http://dbpedia.org/resource/Cachorro";"good";682.0
+"Don Juan DeMarco";4/7/95 12:00 AM;"http://dbpedia.org/resource/Don_Juan_DeMarco";"good";683.0
+"Everything Put Together";11/2/01 12:00 AM;"http://dbpedia.org/resource/Everything_Put_Together";"good";684.0
+"Hannah Takes the Stairs";8/22/07 12:00 AM;"http://dbpedia.org/resource/Hannah_Takes_the_Stairs";"good";685.0
+"He Got Game";5/1/98 12:00 AM;"http://dbpedia.org/resource/He_Got_Game";"good";686.0
+"Hot Tub Time Machine";3/26/10 12:00 AM;"http://dbpedia.org/resource/Hot_Tub_Time_Machine";"good";687.0
+"How She Move";1/25/08 12:00 AM;"http://dbpedia.org/resource/How_She_Move";"good";688.0
+"King of California";9/14/07 12:00 AM;"http://dbpedia.org/resource/King_of_California";"good";689.0
+"Kit Kittredge: An American Girl";6/20/08 12:00 AM;"http://dbpedia.org/resource/Kit_Kittredge:_An_American_Girl";"good";690.0
+"Miss Pettigrew Lives for a Day";3/7/08 12:00 AM;"http://dbpedia.org/resource/Miss_Pettigrew_Lives_for_a_Day";"good";691.0
+"My Reincarnation";10/28/11 12:00 AM;"http://dbpedia.org/resource/My_Reincarnation";"good";692.0
+"One True Thing";9/18/98 12:00 AM;"http://dbpedia.org/resource/One_True_Thing";"good";693.0
+"Out of the Furnace";12/4/13 12:00 AM;"http://dbpedia.org/resource/Out_of_the_Furnace";"good";694.0
+"Pirates of the Caribbean: The Curse of the Black Pearl";7/9/03 12:00 AM;"http://dbpedia.org/resource/Pirates_of_the_Caribbean:_The_Curse_of_the_Black_Pearl";"good";695.0
+"Planet B-Boy";3/21/08 12:00 AM;"http://dbpedia.org/resource/Planet_B-Boy";"good";696.0
+"Reel Injun";6/11/10 12:00 AM;"http://dbpedia.org/resource/Reel_Injun";"good";697.0
+"Revenge of the Electric Car";10/21/11 12:00 AM;"http://dbpedia.org/resource/Revenge_of_the_Electric_Car";"good";698.0
+"Sarah Silverman: Jesus Is Magic";11/11/05 12:00 AM;"http://dbpedia.org/resource/Sarah_Silverman:_Jesus_Is_Magic";"good";699.0
+"Sex Is Comedy";10/20/04 12:00 AM;"http://dbpedia.org/resource/Sex_Is_Comedy";"good";700.0
+"Songcatcher";6/15/01 12:00 AM;"http://dbpedia.org/resource/Songcatcher";"good";701.0
+"The Great Buck Howard";3/20/09 12:00 AM;"http://dbpedia.org/resource/The_Great_Buck_Howard";"good";702.0
+"The Great Yokai War";6/30/06 12:00 AM;"http://dbpedia.org/resource/The_Great_Yokai_War";"good";703.0
+"The Last Exorcism";8/27/10 12:00 AM;"http://dbpedia.org/resource/The_Last_Exorcism";"good";704.0
+"The Lost Boys";7/31/87 12:00 AM;"http://dbpedia.org/resource/The_Lost_Boys";"good";705.0
+"The Mask of Zorro";7/17/98 12:00 AM;"http://dbpedia.org/resource/The_Mask_of_Zorro";"good";706.0
+"The Parking Lot Movie";8/6/10 12:00 AM;"http://dbpedia.org/resource/The_Parking_Lot_Movie";"good";707.0
+"The Rage in Placid Lake";5/21/04 12:00 AM;"http://dbpedia.org/resource/The_Rage_in_Placid_Lake";"good";708.0
+"The Upside of Anger";3/11/05 12:00 AM;"http://dbpedia.org/resource/The_Upside_of_Anger";"good";709.0
+"Things We Lost in the Fire";10/19/07 12:00 AM;"http://dbpedia.org/resource/Things_We_Lost_in_the_Fire";"good";710.0
+"Three of Hearts: A Postmodern Family";10/19/05 12:00 AM;"http://dbpedia.org/resource/Three_of_Hearts:_A_Postmodern_Family";"good";711.0
+"True Lies";7/15/94 12:00 AM;"http://dbpedia.org/resource/True_Lies";"good";712.0
+"Two Brothers";6/25/04 12:00 AM;"http://dbpedia.org/resource/Two_Brothers";"good";713.0
+"Under Our Skin";6/19/09 12:00 AM;"http://dbpedia.org/resource/Under_Our_Skin";"good";714.0
+"Walk Hard: The Dewey Cox Story";12/21/07 12:00 AM;"http://dbpedia.org/resource/Walk_Hard:_The_Dewey_Cox_Story";"good";715.0
+"Waydowntown";1/25/02 12:00 AM;"http://dbpedia.org/resource/Waydowntown";"good";716.0
+"William S. Burroughs: A Man Within";11/17/10 12:00 AM;"http://dbpedia.org/resource/William_S._Burroughs:_A_Man_Within";"good";717.0
+"Zombie Honeymoon";10/4/05 12:00 AM;"http://dbpedia.org/resource/Zombie_Honeymoon";"good";718.0
+"A Few Good Men";12/11/92 12:00 AM;"http://dbpedia.org/resource/A_Few_Good_Men";"good";719.0
+"A Silent Love";10/29/04 12:00 AM;"http://dbpedia.org/resource/A_Silent_Love";"good";720.0
+"A Year Without Love";2/10/06 12:00 AM;"http://dbpedia.org/resource/A_Year_Without_Love";"good";721.0
+"All the Right Moves";10/21/83 12:00 AM;"http://dbpedia.org/resource/All_the_Right_Moves";"good";722.0
+"American History X";10/30/98 12:00 AM;"http://dbpedia.org/resource/American_History_X";"good";723.0
+"Fierce Creatures";1/24/97 12:00 AM;"http://dbpedia.org/resource/Fierce_Creatures";"good";724.0
+"Finding Forrester";12/20/00 12:00 AM;"http://dbpedia.org/resource/Finding_Forrester";"good";725.0
+"First Blood";10/22/82 12:00 AM;"http://dbpedia.org/resource/First_Blood";"good";726.0
+"Five Minutes of Heaven";8/21/09 12:00 AM;"http://dbpedia.org/resource/Five_Minutes_of_Heaven";"good";727.0
+"G.I. Jane";8/22/97 12:00 AM;"http://dbpedia.org/resource/G.I._Jane";"good";728.0
+"Grabbers";7/19/13 12:00 AM;"http://dbpedia.org/resource/Grabbers";"good";729.0
+"Hollywoodland";9/8/06 12:00 AM;"http://dbpedia.org/resource/Hollywoodland";"good";730.0
+"I Am a Sex Addict";4/5/06 12:00 AM;"http://dbpedia.org/resource/I_Am_a_Sex_Addict";"good";731.0
+"I Sell the Dead";8/7/09 12:00 AM;"http://dbpedia.org/resource/I_Sell_the_Dead";"good";732.0
+"Incident at Loch Ness";9/17/04 12:00 AM;"http://dbpedia.org/resource/Incident_at_Loch_Ness";"good";733.0
+"Jesus Camp";9/22/06 12:00 AM;"http://dbpedia.org/resource/Jesus_Camp";"good";734.0
+"Kabluey";7/4/08 12:00 AM;"http://dbpedia.org/resource/Kabluey";"good";735.0
+"Lord of War";9/16/05 12:00 AM;"http://dbpedia.org/resource/Lord_of_War";"good";736.0
+"My Big Fat Greek Wedding";4/19/02 12:00 AM;"http://dbpedia.org/resource/My_Big_Fat_Greek_Wedding";"good";737.0
+"Nothing in Common";7/30/86 12:00 AM;"http://dbpedia.org/resource/Nothing_in_Common";"good";738.0
+"Puzzlehead";3/23/06 12:00 AM;"http://dbpedia.org/resource/Puzzlehead";"good";739.0
+"Rugrats in Paris: The Movie - Rugrats II";11/17/00 12:00 AM;"http://dbpedia.org/resource/Rugrats_in_Paris:_The_Movie";"good";740.0
+"Seraphim Falls";1/26/07 12:00 AM;"http://dbpedia.org/resource/Seraphim_Falls";"good";741.0
+"Supporting Characters";1/25/13 12:00 AM;"http://dbpedia.org/resource/Supporting_Characters";"good";742.0
+"The Abyss";8/9/89 12:00 AM;"http://dbpedia.org/resource/The_Abyss";"good";743.0
+"The Best Exotic Marigold Hotel";5/4/12 12:00 AM;"http://dbpedia.org/resource/The_Best_Exotic_Marigold_Hotel";"good";744.0
+"The Breakfast Club";2/15/85 12:00 AM;"http://dbpedia.org/resource/The_Breakfast_Club";"good";745.0
+"The Claim";12/29/00 12:00 AM;"http://dbpedia.org/resource/The_Claim";"good";746.0
+"The First Beautiful Thing";4/15/11 12:00 AM;"http://dbpedia.org/resource/The_First_Beautiful_Thing";"good";747.0
+"The Five-Year Engagement";4/27/12 12:00 AM;"http://dbpedia.org/resource/The_Five-Year_Engagement";"good";748.0
+"The Great Water";6/17/05 12:00 AM;"http://dbpedia.org/resource/The_Great_Water";"good";749.0
+"The Ice Harvest";11/23/05 12:00 AM;"http://dbpedia.org/resource/The_Ice_Harvest";"good";750.0
+"The Interpreter";4/22/05 12:00 AM;"http://dbpedia.org/resource/The_Interpreter";"good";751.0
+"The Last Mountain";6/3/11 12:00 AM;"http://dbpedia.org/resource/The_Last_Mountain";"good";752.0
+"The Life Aquatic with Steve Zissou";12/10/04 12:00 AM;"http://dbpedia.org/resource/The_Life_Aquatic_with_Steve_Zissou";"good";753.0
+"The Man Without a Face";8/25/93 12:00 AM;"http://dbpedia.org/resource/The_Man_Without_a_Face";"good";754.0
+"The Matrix Reloaded";5/15/03 12:00 AM;"http://dbpedia.org/resource/The_Matrix_Reloaded";"good";755.0
+"The Mudge Boy";5/7/04 12:00 AM;"http://dbpedia.org/resource/The_Mudge_Boy";"good";756.0
+"The Names of Love";6/24/11 12:00 AM;"http://dbpedia.org/resource/The_Names_of_Love";"good";757.0
+"The Negotiator";7/29/98 12:00 AM;"http://dbpedia.org/resource/The_Negotiator";"good";758.0
+"The Nutty Professor";6/28/96 12:00 AM;"http://dbpedia.org/resource/The_Nutty_Professor";"good";759.0
+"The Roost";10/21/05 12:00 AM;"http://dbpedia.org/resource/The_Roost";"good";760.0
+"The Year of the Yao";4/15/05 12:00 AM;"http://dbpedia.org/resource/The_Year_of_the_Yao";"good";761.0
+"Torremolinos 73";4/15/05 12:00 AM;"http://dbpedia.org/resource/Torremolinos_73";"good";762.0
+"Train of Life";11/5/99 12:00 AM;"http://dbpedia.org/resource/Train_of_Life";"good";763.0
+"Zebraman";8/15/07 12:00 AM;"http://dbpedia.org/resource/Zebraman";"good";764.0
+"African Cats";4/22/11 12:00 AM;"http://dbpedia.org/resource/African_Cats";"good";765.0
+"Arakimentari";1/21/05 12:00 AM;"http://dbpedia.org/resource/Arakimentari";"good";766.0
+"Beijing Bicycle";1/25/02 12:00 AM;"http://dbpedia.org/resource/Beijing_Bicycle";"good";767.0
+"Best Worst Movie";4/23/10 12:00 AM;"http://dbpedia.org/resource/Best_Worst_Movie";"good";768.0
+"Big Miracle";2/3/12 12:00 AM;"http://dbpedia.org/resource/Big_Miracle";"good";769.0
+"Blue Crush";8/16/02 12:00 AM;"http://dbpedia.org/resource/Blue_Crush";"good";770.0
+"Dead Man";5/10/96 12:00 AM;"http://dbpedia.org/resource/Dead_Man";"good";771.0
+"Dead Snow";6/19/09 12:00 AM;"http://dbpedia.org/resource/Dead_Snow";"good";772.0
+"Deconstructing Harry";12/12/97 12:00 AM;"http://dbpedia.org/resource/Deconstructing_Harry";"good";773.0
+"Drawing Restraint 9";3/29/06 12:00 AM;"http://dbpedia.org/resource/Drawing_Restraint_9";"good";774.0
+"Dust to Glory";4/1/05 12:00 AM;"http://dbpedia.org/resource/Dust_to_Glory";"good";775.0
+"Frida";10/25/02 12:00 AM;"http://dbpedia.org/resource/Frida";"good";776.0
+"Giuliani Time";5/12/06 12:00 AM;"http://dbpedia.org/resource/Giuliani_Time";"good";777.0
+"Go Go Tales";1/7/11 12:00 AM;"http://dbpedia.org/resource/Go_Go_Tales";"good";778.0
+"Goya in Bordeaux";9/15/00 12:00 AM;"http://dbpedia.org/resource/Goya_in_Bordeaux";"good";779.0
+"Hair High";10/18/06 12:00 AM;"http://dbpedia.org/resource/Hair_High";"good";780.0
+"Kindergarten Cop";12/21/90 12:00 AM;"http://dbpedia.org/resource/Kindergarten_Cop";"good";781.0
+"Ladies in Lavender.";4/29/05 12:00 AM;"http://dbpedia.org/resource/Ladies_in_Lavender";"good";782.0
+"Le Pont du Nord";3/22/13 12:00 AM;"http://dbpedia.org/resource/Le_Pont_du_Nord";"good";783.0
+"Lower City";6/16/06 12:00 AM;"http://dbpedia.org/resource/Lower_City";"good";784.0
+"Matchstick Men";9/12/03 12:00 AM;"http://dbpedia.org/resource/Matchstick_Men";"good";785.0
+"Meet the Robinsons";3/30/07 12:00 AM;"http://dbpedia.org/resource/Meet_the_Robinsons";"good";786.0
+"Red Heat";6/17/88 12:00 AM;"http://dbpedia.org/resource/Red_Heat";"good";787.0
+"Reign Over Me";3/23/07 12:00 AM;"http://dbpedia.org/resource/Reign_Over_Me";"good";788.0
+"Role Models";11/7/08 12:00 AM;"http://dbpedia.org/resource/Role_Models";"good";789.0
+"The Dream Catcher";9/15/00 12:00 AM;"http://dbpedia.org/resource/The_Dream_Catcher";"good";790.0
+"The Faculty";12/25/98 12:00 AM;"http://dbpedia.org/resource/The_Faculty";"good";791.0
+"The Fisher King";9/20/91 12:00 AM;"http://dbpedia.org/resource/The_Fisher_King";"good";792.0
+"The Machinist";10/22/04 12:00 AM;"http://dbpedia.org/resource/The_Machinist";"good";793.0
+"The Man with Two Brains";6/3/83 12:00 AM;"http://dbpedia.org/resource/The_Man_with_Two_Brains";"good";794.0
+"The Wackness";7/3/08 12:00 AM;"http://dbpedia.org/resource/The_Wackness";"good";795.0
+"The Weather Man";10/28/05 12:00 AM;"http://dbpedia.org/resource/The_Weather_Man";"good";796.0
+"Trollhunter";6/10/11 12:00 AM;"http://dbpedia.org/resource/Trollhunter";"good";797.0
+"Welcome to Collinwood";10/4/02 12:00 AM;"http://dbpedia.org/resource/Welcome_to_Collinwood";"good";798.0
+"Where God Left His Shoes";12/12/08 12:00 AM;"http://dbpedia.org/resource/Where_God_Left_His_Shoes";"good";799.0
+"Wondrous Oblivion";11/3/06 12:00 AM;"http://dbpedia.org/resource/Wondrous_Oblivion";"good";800.0
+"Zoolander";9/28/01 12:00 AM;"http://dbpedia.org/resource/Zoolander";"good";801.0
+"Adventures of Power";10/9/09 12:00 AM;"http://dbpedia.org/resource/Adventures_of_Power";"bad";802.0
+"Aftershock";5/10/13 12:00 AM;"http://dbpedia.org/resource/Aftershock_(2013_film)";"bad";803.0
+"Alexander";11/24/04 12:00 AM;"http://dbpedia.org/resource/Alexander_(film)";"bad";804.0
+"All the Rage";7/7/00 12:00 AM;"http://dbpedia.org/resource/All_the_Rage_(film)";"bad";805.0
+"Alvin and the Chipmunks";12/14/07 12:00 AM;"http://dbpedia.org/resource/Alvin_and_the_Chipmunks_(film)";"bad";806.0
+"Angel Eyes";5/18/01 12:00 AM;"http://dbpedia.org/resource/Angel_Eyes_(film)";"bad";807.0
+"Arthur and the Invisibles";12/29/06 12:00 AM;"http://dbpedia.org/resource/Arthur_and_the_Invisibles";"bad";808.0
+"Bait";9/15/00 12:00 AM;"http://dbpedia.org/resource/Bait_(2000_film)";"bad";809.0
+"Bringing Down the House";3/7/03 12:00 AM;"http://dbpedia.org/resource/Bringing_Down_the_House_(film)";"bad";810.0
+"Camera Obscura";9/26/03 12:00 AM;"http://dbpedia.org/resource/Camera_Obscura_(film)";"bad";811.0
+"Clash of the Titans";4/1/10 12:00 AM;"http://dbpedia.org/resource/Clash_of_the_Titans_(2010_film)";"bad";812.0
+"Cry_Wolf";9/16/05 12:00 AM;"http://dbpedia.org/resource/Cry_Wolf_(2005_film)";"bad";813.0
+"Daddy Day Care";5/9/03 12:00 AM;"http://dbpedia.org/resource/Daddy_Day_Care";"bad";814.0
+"Dirty Dancing: Havana Nights";2/27/04 12:00 AM;"http://dbpedia.org/resource/Dirty_Dancing:_Havana_Nights";"bad";815.0
+"Dot the I";3/11/05 12:00 AM;"http://dbpedia.org/resource/Dot_the_i";"bad";816.0
+"Dumb and Dumber";12/16/94 12:00 AM;"http://dbpedia.org/resource/Dumb_and_Dumber";"bad";817.0
+"Exit Wounds";3/16/01 12:00 AM;"http://dbpedia.org/resource/Exit_Wounds";"bad";818.0
+"Fame";9/25/09 12:00 AM;"http://dbpedia.org/resource/Fame_(2009_film)";"bad";819.0
+"Fat Albert";12/25/04 12:00 AM;"http://dbpedia.org/resource/Fat_Albert_(film)";"bad";820.0
+"Forgiveness";9/12/08 12:00 AM;"http://dbpedia.org/resource/Forgiveness_(2008_film)";"bad";821.0
+"From Prada to Nada";1/28/11 12:00 AM;"http://dbpedia.org/resource/From_Prada_to_Nada";"bad";822.0
+"High Heels and Low Lifes";10/26/01 12:00 AM;"http://dbpedia.org/resource/High_Heels_and_Low_Lifes";"bad";823.0
+"Inhale";10/22/10 12:00 AM;"http://dbpedia.org/resource/Inhale_(film)";"bad";824.0
+"Irene in Time";9/23/09 12:00 AM;"http://dbpedia.org/resource/Irene_in_Time";"bad";825.0
+"Jumanji";12/15/95 12:00 AM;"http://dbpedia.org/resource/Jumanji";"bad";826.0
+"Just a Kiss";9/27/02 12:00 AM;"http://dbpedia.org/resource/Just_a_Kiss_(film)";"bad";827.0
+"Legendary";9/10/10 12:00 AM;"http://dbpedia.org/resource/Legendary_(film)";"bad";828.0
+"Love at Times Square";2/14/03 12:00 AM;"http://dbpedia.org/resource/Love_at_Times_Square";"bad";829.0
+"Man of the Year";10/13/06 12:00 AM;"http://dbpedia.org/resource/Man_of_the_Year_(2006_film)";"bad";830.0
+"Message in a Bottle";2/12/99 12:00 AM;"http://dbpedia.org/resource/Message_in_a_Bottle_(film)";"bad";831.0
+"Mutant Aliens";4/19/02 12:00 AM;"http://dbpedia.org/resource/Mutant_Aliens";"bad";832.0
+"P.S. I Love You";12/21/07 12:00 AM;"http://dbpedia.org/resource/P.S._I_Love_You_(film)";"bad";833.0
+"Paul Blart: Mall Cop";1/16/09 12:00 AM;"http://dbpedia.org/resource/Paul_Blart:_Mall_Cop";"bad";834.0
+"Planet 51";11/20/09 12:00 AM;"http://dbpedia.org/resource/Planet_51";"bad";835.0
+"Reign of Fire";7/12/02 12:00 AM;"http://dbpedia.org/resource/Reign_of_Fire_(film)";"bad";836.0
+"Resident Evil: Retribution";9/14/12 12:00 AM;"http://dbpedia.org/resource/Resident_Evil:_Retribution";"bad";837.0
+"Silk";9/14/07 12:00 AM;"http://dbpedia.org/resource/Silk_(2007_film)";"bad";838.0
+"Simon Birch";9/11/98 12:00 AM;"http://dbpedia.org/resource/Simon_Birch";"bad";839.0
+"Snowmen";10/21/11 12:00 AM;"http://dbpedia.org/resource/Snowmen_(film)";"bad";840.0
+"Swing Kids";3/5/93 12:00 AM;"http://dbpedia.org/resource/Swing_Kids_(film)";"bad";841.0
+"The Edge of Love";3/13/09 12:00 AM;"http://dbpedia.org/resource/The_Edge_of_Love";"bad";842.0
+"The Goods: Live Hard, Sell Hard";8/14/09 12:00 AM;"http://dbpedia.org/resource/The_Goods:_Live_Hard,_Sell_Hard.";"bad";843.0
+"The Green Hornet";1/14/11 12:00 AM;"http://dbpedia.org/resource/The_Green_Hornet_(serial)";"bad";844.0
+"The Jimmy Show";12/13/02 12:00 AM;"http://dbpedia.org/resource/The_Jimmy_Show";"bad";845.0
+"The Lucky One";4/20/12 12:00 AM;"http://dbpedia.org/resource/The_Lucky_One_(film)";"bad";846.0
+"Underworld: Awakening";1/20/12 12:00 AM;"http://dbpedia.org/resource/Underworld:_Awakening";"bad";847.0
+"World Traveler";4/19/02 12:00 AM;"http://dbpedia.org/resource/World_Traveler";"bad";848.0
+"Young People Fucking";8/29/08 12:00 AM;"http://dbpedia.org/resource/Young_People_Fucking";"bad";849.0
+"12 Rounds";3/27/09 12:00 AM;"http://dbpedia.org/resource/12_Rounds_(film)";"bad";850.0
+"2 Fast 2 Furious";6/6/03 12:00 AM;"http://dbpedia.org/resource/2_Fast_2_Furious";"bad";851.0
+"A Dog of Flanders";8/27/99 12:00 AM;"http://dbpedia.org/resource/A_Dog_of_Flanders_(1999_film)";"bad";852.0
+"After the Sunset";11/12/04 12:00 AM;"http://dbpedia.org/resource/After_the_Sunset";"bad";853.0
+"August Rush";11/21/07 12:00 AM;"http://dbpedia.org/resource/August_Rush";"bad";854.0
+"Backdraft";5/24/91 12:00 AM;"http://dbpedia.org/resource/Backdraft_(film)";"bad";855.0
+"Balls of Fury";8/29/07 12:00 AM;"http://dbpedia.org/resource/Balls_of_Fury";"bad";856.0
+"Blade: Trinity";12/8/04 12:00 AM;"http://dbpedia.org/resource/Blade:_Trinity";"bad";857.0
+"Blow Dry";3/7/01 12:00 AM;"http://dbpedia.org/resource/Blow_Dry";"bad";858.0
+"Brake";3/23/12 12:00 AM;"http://dbpedia.org/resource/Brake_(film)";"bad";859.0
+"Burning Annie";2/7/07 12:00 AM;"http://dbpedia.org/resource/Burning_Annie";"bad";860.0
+"Confessions of a Shopaholic";2/6/09 12:00 AM;"http://dbpedia.org/resource/Confessions_of_a_Shopaholic_(film)";"bad";861.0
+"Crossing Over";2/27/09 12:00 AM;"http://dbpedia.org/resource/Crossing_Over_(film)";"bad";862.0
+"Dark Streets";12/12/08 12:00 AM;"http://dbpedia.org/resource/Dark_Streets";"bad";863.0
+"Death to Smoochy";3/29/02 12:00 AM;"http://dbpedia.org/resource/Death_to_Smoochy";"bad";864.0
+"DOA: Dead or Alive";6/15/07 12:00 AM;"http://dbpedia.org/resource/DOA:_Dead_or_Alive";"bad";865.0
+"Eragon";12/15/06 12:00 AM;"http://dbpedia.org/resource/Eragon_(film)";"bad";866.0
+"Fakers";4/27/07 12:00 AM;"http://dbpedia.org/resource/Fakers";"bad";867.0
+"Final Destination 2";1/31/03 12:00 AM;"http://dbpedia.org/resource/Final_Destination_2";"bad";868.0
+"Gigantic";4/3/09 12:00 AM;"http://dbpedia.org/resource/Gigantic_(film)";"bad";869.0
+"Gothika";11/21/03 12:00 AM;"http://dbpedia.org/resource/Gothika";"bad";870.0
+"Joshua";9/20/02 12:00 AM;"http://dbpedia.org/resource/Joshua_(2002_film)";"bad";871.0
+"Just Visiting";4/6/01 12:00 AM;"http://dbpedia.org/resource/Just_Visiting_(film)";"bad";872.0
+"Kids in America";10/21/05 12:00 AM;"http://dbpedia.org/resource/Kids_in_America_(film)";"bad";873.0
+"Lay the Favorite";12/7/12 12:00 AM;"http://dbpedia.org/resource/Lay_the_Favorite";"bad";874.0
+"Little Nicky";11/10/00 12:00 AM;"http://dbpedia.org/resource/Little_Nicky";"bad";875.0
+"Looking for an Echo";11/10/00 12:00 AM;"http://dbpedia.org/resource/Looking_for_an_Echo";"bad";876.0
+"Never Die Alone";3/26/04 12:00 AM;"http://dbpedia.org/resource/Never_Die_Alone";"bad";877.0
+"Nutty Professor II: The Klumps";7/28/00 12:00 AM;"http://dbpedia.org/resource/Nutty_Professor_II:_The_Klumps";"bad";878.0
+"One Fall";9/16/11 12:00 AM;"http://dbpedia.org/resource/One_Fall";"bad";879.0
+"One Night with the King";10/13/06 12:00 AM;"http://dbpedia.org/resource/One_Night_with_the_King";"bad";880.0
+"Ong Bak 3";1/14/11 12:00 AM;"http://dbpedia.org/resource/Ong_Bak_3";"bad";881.0
+"Our Family Wedding";3/12/10 12:00 AM;"http://dbpedia.org/resource/Our_Family_Wedding";"bad";882.0
+"Paparazzi";9/3/04 12:00 AM;"http://dbpedia.org/resource/Paparazzi_(2004_film)";"bad";883.0
+"Raising Helen";5/26/04 12:00 AM;"http://dbpedia.org/resource/Raising_Helen";"bad";884.0
+"Random Hearts";10/8/99 12:00 AM;"http://dbpedia.org/resource/Random_Hearts";"bad";885.0
+"Rugrats Go Wild";6/13/03 12:00 AM;"http://dbpedia.org/resource/Rugrats_Go_Wild";"bad";886.0
+"Seeking Justice";3/16/12 12:00 AM;"http://dbpedia.org/resource/Seeking_Justice";"bad";887.0
+"Taking Lives";3/19/04 12:00 AM;"http://dbpedia.org/resource/Taking_Lives_(film)";"bad";888.0
+"The Chronicles of Riddick";6/11/04 12:00 AM;"http://dbpedia.org/resource/The_Chronicles_of_Riddick";"bad";889.0
+"The Flintstones";5/27/94 12:00 AM;"http://dbpedia.org/resource/The_Flintstones_(film)";"bad";890.0
+"The Jungle Book 2";2/14/03 12:00 AM;"http://dbpedia.org/resource/The_Jungle_Book_2";"bad";891.0
+"The Last Time";5/18/07 12:00 AM;"http://dbpedia.org/resource/The_Last_Time_(film)";"bad";892.0
+"The Life Before Her Eyes";4/18/08 12:00 AM;"http://dbpedia.org/resource/The_Life_Before_Her_Eyes";"bad";893.0
+"The Mostly Unfabulous Social Life of Ethan Green";6/16/06 12:00 AM;"http://dbpedia.org/resource/The_Mostly_Unfabulous_Social_Life_of_Ethan_Green";"bad";894.0
+"The Moth Diaries";4/20/12 12:00 AM;"http://dbpedia.org/resource/The_Moth_Diaries_(film)";"bad";895.0
+"The Outsiders";3/25/83 12:00 AM;"http://dbpedia.org/resource/The_Outsiders_(film)";"bad";896.0
+"The Specials";9/22/00 12:00 AM;"http://dbpedia.org/resource/The_Specials_(film)";"bad";897.0
+"The Ward";7/8/11 12:00 AM;"http://dbpedia.org/resource/The_Ward_(film)";"bad";898.0
+"Trailer Park Boys: The Movie";1/25/08 12:00 AM;"http://dbpedia.org/resource/Trailer_Park_Boys:_The_Movie";"bad";899.0
+"Uncommon Valor";12/16/83 12:00 AM;"http://dbpedia.org/resource/Uncommon_Valor";"bad";900.0
+"Wild Wild West";6/30/99 12:00 AM;"http://dbpedia.org/resource/Wild_Wild_West";"bad";901.0
+"Yours, Mine and Ours";11/23/05 12:00 AM;"http://dbpedia.org/resource/Yours,_Mine_and_Ours_(2005_film)";"bad";902.0
+"A Hole in One";5/6/05 12:00 AM;"http://dbpedia.org/resource/A_Hole_in_One";"bad";903.0
+"Ace Ventura: Pet Detective";2/4/94 12:00 AM;"http://dbpedia.org/resource/Ace_Ventura:_Pet_Detective";"bad";904.0
+"Anaconda";4/11/97 12:00 AM;"http://dbpedia.org/resource/Anaconda_(film)";"bad";905.0
+"Analyze That";12/6/02 12:00 AM;"http://dbpedia.org/resource/Analyze_That";"bad";906.0
+"Annapolis";1/27/06 12:00 AM;"http://dbpedia.org/resource/Annapolis_(film)";"bad";907.0
+"Another Gay Movie";7/28/06 12:00 AM;"http://dbpedia.org/resource/Another_Gay_Movie";"bad";908.0
+"Battle: Los Angeles";3/11/11 12:00 AM;"http://dbpedia.org/resource/Battle:_Los_Angeles";"bad";909.0
+"Be Cool";3/4/05 12:00 AM;"http://dbpedia.org/resource/Be_Cool";"bad";910.0
+"Charlie St. Cloud";7/30/10 12:00 AM;"http://dbpedia.org/resource/Charlie_St._Cloud_(film)";"bad";911.0
+"Cold Creek Manor";9/19/03 12:00 AM;"http://dbpedia.org/resource/Cold_Creek_Manor";"bad";912.0
+"Crocodile Dundee in Los Angeles";4/20/01 12:00 AM;"http://dbpedia.org/resource/Crocodile_Dundee_in_Los_Angeles";"bad";913.0
+"Delhi Safari";12/7/12 12:00 AM;"http://dbpedia.org/resource/Delhi_Safari";"bad";914.0
+"Dirty Girl";10/7/11 12:00 AM;"http://dbpedia.org/resource/Dirty_Girl_(2010_film)";"bad";915.0
+"Evan Almighty";6/22/07 12:00 AM;"http://dbpedia.org/resource/Evan_Almighty";"bad";916.0
+"Flubber";11/26/97 12:00 AM;"http://dbpedia.org/resource/Flubber_(film)";"bad";917.0
+"Flypaper";8/19/11 12:00 AM;"http://dbpedia.org/resource/Flypaper_(2011_film)";"bad";918.0
+"Freddy vs. Jason";8/15/03 12:00 AM;"http://dbpedia.org/resource/Freddy_vs._Jason";"bad";919.0
+"Garfield: A Tail of Two Kitties";6/16/06 12:00 AM;"http://dbpedia.org/resource/Garfield:_A_Tail_of_Two_Kitties";"bad";920.0
+"Girl Play";4/1/05 12:00 AM;"http://dbpedia.org/resource/Girl_Play";"bad";921.0
+"Honey";12/5/03 12:00 AM;"http://dbpedia.org/resource/Honey_(2003_film)";"bad";922.0
+"Judy Moody and the Not Bummer Summer";6/10/11 12:00 AM;"http://dbpedia.org/resource/Judy_Moody_and_the_Not_Bummer_Summer";"bad";923.0
+"Knock Off";9/4/98 12:00 AM;"http://dbpedia.org/resource/Knock_Off_(film)";"bad";924.0
+"Lethal Weapon 4";7/10/98 12:00 AM;"http://dbpedia.org/resource/Lethal_Weapon_4";"bad";925.0
+"Love Ranch";6/30/10 12:00 AM;"http://dbpedia.org/resource/Love_Ranch";"bad";926.0
+"Made of Honor";5/2/08 12:00 AM;"http://dbpedia.org/resource/Made_of_Honor";"bad";927.0
+"Miracle at St. Anna";9/26/08 12:00 AM;"http://dbpedia.org/resource/Miracle_at_St._Anna";"bad";928.0
+"Only God Forgives";7/19/13 12:00 AM;"http://dbpedia.org/resource/Only_God_Forgives";"bad";929.0
+"P2";11/9/07 12:00 AM;"http://dbpedia.org/resource/P2_(film)";"bad";930.0
+"Reindeer Games";2/25/00 12:00 AM;"http://dbpedia.org/resource/Reindeer_Games";"bad";931.0
+"Seven Days in Utopia";9/2/11 12:00 AM;"http://dbpedia.org/resource/Seven_Days_in_Utopia";"bad";932.0
+"Sex: The Annabel Chong Story";2/11/00 12:00 AM;"http://dbpedia.org/resource/Sex:_The_Annabel_Chong_Story";"bad";933.0
+"Speed Racer";5/9/08 12:00 AM;"http://dbpedia.org/resource/Speed_Racer_(film)";"bad";934.0
+"Spy Kids: All the Time in the World";8/19/11 12:00 AM;"http://dbpedia.org/resource/Spy_Kids:_All_the_Time_in_the_World";"bad";935.0
+"Suspect Zero";8/27/04 12:00 AM;"http://dbpedia.org/resource/Suspect_Zero";"bad";936.0
+"Ted Bundy";9/13/02 12:00 AM;"http://dbpedia.org/resource/Ted_Bundy_(film)";"bad";937.0
+"The Air I Breathe";1/25/08 12:00 AM;"http://dbpedia.org/resource/The_Air_I_Breathe";"bad";938.0
+"The Country Bears";7/26/02 12:00 AM;"http://dbpedia.org/resource/The_Country_Bears";"bad";939.0
+"The Crew";8/25/00 12:00 AM;"http://dbpedia.org/resource/The_Crew_(2000_film)";"bad";940.0
+"The Frozen Ground";8/23/13 12:00 AM;"http://dbpedia.org/resource/The_Frozen_Ground";"bad";941.0
+"The Kid & I";12/2/05 12:00 AM;"http://dbpedia.org/resource/The_Kid_&_I";"bad";942.0
+"The Last Legion";8/17/07 12:00 AM;"http://dbpedia.org/resource/The_Last_Legion";"bad";943.0
+"The Last Sin Eater";2/9/07 12:00 AM;"http://dbpedia.org/resource/The_Last_Sin_Eater_(film)";"bad";944.0
+"The Living Wake";5/14/10 12:00 AM;"http://dbpedia.org/resource/The_Living_Wake";"bad";945.0
+"The Lone Ranger";7/3/13 12:00 AM;"http://dbpedia.org/resource/The_Lone_Ranger_(serial)";"bad";946.0
+"The Samaritan";5/18/12 12:00 AM;"http://dbpedia.org/resource/The_Samaritan";"bad";947.0
+"The Story of Us";10/15/99 12:00 AM;"http://dbpedia.org/resource/The_Story_of_Us";"bad";948.0
+"The Tourist";12/10/10 12:00 AM;"http://dbpedia.org/resource/The_Tourist_(2010_film)";"bad";949.0
+"The United States of Leland";4/2/04 12:00 AM;"http://dbpedia.org/resource/The_United_States_of_Leland";"bad";950.0
+"Underdog";8/3/07 12:00 AM;"http://dbpedia.org/resource/Underdog_(film)";"bad";951.0
+"W.E.";12/9/11 12:00 AM;"http://dbpedia.org/resource/W.E.";"bad";952.0
+"Waist Deep";6/23/06 12:00 AM;"http://dbpedia.org/resource/Waist_Deep";"bad";953.0
+"War, Inc.";5/23/08 12:00 AM;"http://dbpedia.org/resource/War,_Inc.";"bad";954.0
+"Wrath of the Titans";3/30/12 12:00 AM;"http://dbpedia.org/resource/Wrath_of_the_Titans";"bad";955.0
+"xXx: State of the Union";4/29/05 12:00 AM;"http://dbpedia.org/resource/XXX:_State_of_the_Union";"bad";956.0
+"You Got Served";1/30/04 12:00 AM;"http://dbpedia.org/resource/You_Got_Served";"bad";957.0
+"10th & Wolf";8/18/06 12:00 AM;"http://dbpedia.org/resource/10th_&_Wolf";"bad";958.0
+"20 Dates";2/26/99 12:00 AM;"http://dbpedia.org/resource/20_Dates";"bad";959.0
+"A Man Apart";4/4/03 12:00 AM;"http://dbpedia.org/resource/A_Man_Apart";"bad";960.0
+"After.Life";4/9/10 12:00 AM;"http://dbpedia.org/resource/After.Life";"bad";961.0
+"Against the Ropes";2/20/04 12:00 AM;"http://dbpedia.org/resource/Against_the_Ropes";"bad";962.0
+"Beloved/Friend";2/4/00 12:00 AM;"http://dbpedia.org/resource/Beloved/Friend";"bad";963.0
+"Big Fat Liar";2/8/02 12:00 AM;"http://dbpedia.org/resource/Big_Fat_Liar";"bad";964.0
+"Biker Boyz";1/31/03 12:00 AM;"http://dbpedia.org/resource/Biker_Boyz";"bad";965.0
+"Body Shots";10/22/99 12:00 AM;"http://dbpedia.org/resource/Body_Shots";"bad";966.0
+"Buddy Boy";3/24/00 12:00 AM;"http://dbpedia.org/resource/Buddy_Boy";"bad";967.0
+"Circuit";4/26/02 12:00 AM;"http://dbpedia.org/resource/Circuit_(film)";"bad";968.0
+"Clue";12/13/85 12:00 AM;"http://dbpedia.org/resource/Clue_(film)";"bad";969.0
+"College Road Trip";3/7/08 12:00 AM;"http://dbpedia.org/resource/College_Road_Trip";"bad";970.0
+"Conan the Barbarian";8/19/11 12:00 AM;"http://dbpedia.org/resource/Conan_the_Barbarian_(2011_film)";"bad";971.0
+"Cradle 2 the Grave";2/28/03 12:00 AM;"http://dbpedia.org/resource/Cradle_2_the_Grave";"bad";972.0
+"Deadgirl";7/24/09 12:00 AM;"http://dbpedia.org/resource/Deadgirl_(2008_film)";"bad";973.0
+"Death Sentence";8/31/07 12:00 AM;"http://dbpedia.org/resource/Death_Sentence_(2007_film)";"bad";974.0
+"Diary of a Mad Black Woman";2/25/05 12:00 AM;"http://dbpedia.org/resource/Diary_of_a_Mad_Black_Woman_(film)";"bad";975.0
+"Dickie Roberts: Former Child Star";9/5/03 12:00 AM;"http://dbpedia.org/resource/Dickie_Roberts:_Former_Child_Star";"bad";976.0
+"Domino";10/14/05 12:00 AM;"http://dbpedia.org/resource/Domino_(film)";"bad";977.0
+"Employee of the Month";10/6/06 12:00 AM;"http://dbpedia.org/resource/Employee_of_the_Month_(2006_film)";"bad";978.0
+"Ex Drummer";3/4/11 12:00 AM;"http://dbpedia.org/resource/Ex_Drummer";"bad";979.0
+"Fast Food Fast Women";5/18/01 12:00 AM;"http://dbpedia.org/resource/Fast_Food_Fast_Women";"bad";980.0
+"Father of Invention";10/14/11 12:00 AM;"http://dbpedia.org/resource/Father_of_Invention";"bad";981.0
+"Lethal Weapon 3";5/15/92 12:00 AM;"http://dbpedia.org/resource/Lethal_Weapon_3";"bad";982.0
+"Life Is Hot in Cracktown";6/26/09 12:00 AM;"http://dbpedia.org/resource/Life_Is_Hot_in_Cracktown";"bad";983.0
+"Little Black Book";8/6/04 12:00 AM;"http://dbpedia.org/resource/Little_Black_Book";"bad";984.0
+"My Name Is Bruce";10/31/08 12:00 AM;"http://dbpedia.org/resource/My_Name_Is_Bruce";"bad";985.0
+"Party Monster";9/5/03 12:00 AM;"http://dbpedia.org/resource/Party_Monster_(2003_film)";"bad";986.0
+"Phat Girlz";4/7/06 12:00 AM;"http://dbpedia.org/resource/Phat_Girlz";"bad";987.0
+"Poster Boy";8/11/06 12:00 AM;"http://dbpedia.org/resource/Poster_Boy_(film)";"bad";988.0
+"Push";2/6/09 12:00 AM;"http://dbpedia.org/resource/Push_(2009_film)";"bad";989.0
+"Returner";10/17/03 12:00 AM;"http://dbpedia.org/resource/Returner";"bad";990.0
+"Righteous Kill";9/12/08 12:00 AM;"http://dbpedia.org/resource/Righteous_Kill";"bad";991.0
+"Saw IV";10/26/07 12:00 AM;"http://dbpedia.org/resource/Saw_IV";"bad";992.0
+"Senseless";2/20/98 12:00 AM;"http://dbpedia.org/resource/Senseless";"bad";993.0
+"Serious Moonlight";12/4/09 12:00 AM;"http://dbpedia.org/resource/Serious_Moonlight_(2009_film)";"bad";994.0
+"Seven Pounds";12/19/08 12:00 AM;"http://dbpedia.org/resource/Seven_Pounds";"bad";995.0
+"Shottas";11/3/06 12:00 AM;"http://dbpedia.org/resource/Shottas";"bad";996.0
+"Smother";9/26/08 12:00 AM;"http://dbpedia.org/resource/Smother_(film)";"bad";997.0
+"Something Borrowed";5/6/11 12:00 AM;"http://dbpedia.org/resource/Something_Borrowed_(film)";"bad";998.0
+"Space Chimps";7/18/08 12:00 AM;"http://dbpedia.org/resource/Space_Chimps";"bad";999.0
+"Stardom";10/27/00 12:00 AM;"http://dbpedia.org/resource/Stardom";"bad";1000.0
+"Steal This Movie";8/18/00 12:00 AM;"http://dbpedia.org/resource/Steal_This_Movie!";"bad";1001.0
+"Stolen Summer";3/1/02 12:00 AM;"http://dbpedia.org/resource/Stolen_Summer";"bad";1002.0
+"The Anarchist Cookbook";7/18/03 12:00 AM;"http://dbpedia.org/resource/The_Anarchist_Cookbook_(film)";"bad";1003.0
+"The Invisible";4/27/07 12:00 AM;"http://dbpedia.org/resource/The_Invisible_(film)";"bad";1004.0
+"The Jackal";11/14/97 12:00 AM;"http://dbpedia.org/resource/The_Jackal_(1997_film)";"bad";1005.0
+"The Pink Panther 2";2/6/09 12:00 AM;"http://dbpedia.org/resource/The_Pink_Panther_2";"bad";1006.0
+"The Reaping";4/5/07 12:00 AM;"http://dbpedia.org/resource/The_Reaping";"bad";1007.0
+"The Son of No One";11/4/11 12:00 AM;"http://dbpedia.org/resource/The_Son_of_No_One";"bad";1008.0
+"The Thirteenth Floor";5/28/99 12:00 AM;"http://dbpedia.org/resource/The_Thirteenth_Floor";"bad";1009.0
+"The Tollbooth";2/3/06 12:00 AM;"http://dbpedia.org/resource/The_Tollbooth";"bad";1010.0
+"Three to Tango";10/22/99 12:00 AM;"http://dbpedia.org/resource/Three_to_Tango";"bad";1011.0
+"Tooth Fairy";1/22/10 12:00 AM;"http://dbpedia.org/resource/Tooth_Fairy_(film)";"bad";1012.0
+"Turistas";12/1/06 12:00 AM;"http://dbpedia.org/resource/Turistas";"bad";1013.0
+"Underworld: Evolution";1/20/06 12:00 AM;"http://dbpedia.org/resource/Underworld:_Evolution";"bad";1014.0
+"What Happens in Vegas";5/9/08 12:00 AM;"http://dbpedia.org/resource/What_Happens_in_Vegas";"bad";1015.0
+"102 Dalmatians";11/22/00 12:00 AM;"http://dbpedia.org/resource/102_Dalmatians";"bad";1016.0
+"A Walk to Remember";1/25/02 12:00 AM;"http://dbpedia.org/resource/A_Walk_to_Remember";"bad";1017.0
+"Beyond a Reasonable Doubt";9/11/09 12:00 AM;"http://dbpedia.org/resource/Beyond_a_Reasonable_Doubt_(2009_film)";"bad";1018.0
+"Bollywood/Hollywood";9/26/03 12:00 AM;"http://dbpedia.org/resource/Bollywood/Hollywood";"bad";1019.0
+"Bride of the Wind";6/8/01 12:00 AM;"http://dbpedia.org/resource/Bride_of_the_Wind";"bad";1020.0
+"Dream House";9/30/11 12:00 AM;"http://dbpedia.org/resource/Dream_House_(film)";"bad";1021.0
+"Dreamcatcher";3/21/03 12:00 AM;"http://dbpedia.org/resource/Dreamcatcher_(film)";"bad";1022.0
+"Escape from Planet Earth";2/15/13 12:00 AM;"http://dbpedia.org/resource/Escape_from_Planet_Earth";"bad";1023.0
+"Event Horizon";8/15/97 12:00 AM;"http://dbpedia.org/resource/Event_Horizon_(film)";"bad";1024.0
+"Film Geek";1/13/06 12:00 AM;"http://dbpedia.org/resource/Film_Geek";"bad";1025.0
+"Flakes";12/19/07 12:00 AM;"http://dbpedia.org/resource/Flakes_(film)";"bad";1026.0
+"Flashdance";4/15/83 12:00 AM;"http://dbpedia.org/resource/Flashdance";"bad";1027.0
+"Friday After Next";11/22/02 12:00 AM;"http://dbpedia.org/resource/Friday_After_Next";"bad";1028.0
+"Friday the 13th";5/9/80 12:00 AM;"http://dbpedia.org/resource/Friday_the_13th_(1980_film)";"bad";1029.0
+"Ghost Rider";2/16/07 12:00 AM;"http://dbpedia.org/resource/Ghost_Rider_(film)";"bad";1030.0
+"Ghosts of Mars";8/24/01 12:00 AM;"http://dbpedia.org/resource/Ghosts_of_Mars";"bad";1031.0
+"Hide and Seek";1/28/05 12:00 AM;"http://dbpedia.org/resource/Hide_and_Seek_(2005_film)";"bad";1032.0
+"Hitman";11/21/07 12:00 AM;"http://dbpedia.org/resource/Hitman_(2007_film)";"bad";1033.0
+"How to Lose Friends & Alienate People";10/3/08 12:00 AM;"http://dbpedia.org/resource/How_to_Lose_Friends_&_Alienate_People_(film)";"bad";1034.0
+"I Spy";11/1/02 12:00 AM;"http://dbpedia.org/resource/I_Spy_(film)";"bad";1035.0
+"Indecent Proposal";4/7/93 12:00 AM;"http://dbpedia.org/resource/Indecent_Proposal";"bad";1036.0
+"Loser";7/21/00 12:00 AM;"http://dbpedia.org/resource/Loser_(film)";"bad";1037.0
+"Man of the House";2/25/05 12:00 AM;"http://dbpedia.org/resource/Man_of_the_House_(2005_crime_comedy_film)";"bad";1038.0
+"Mansome";5/18/12 12:00 AM;"http://dbpedia.org/resource/Mansome";"bad";1039.0
+"Megiddo: The Omega Code 2";9/21/01 12:00 AM;"http://dbpedia.org/resource/Megiddo:_The_Omega_Code_2";"bad";1040.0
+"Mrs. Winterbourne";4/19/96 12:00 AM;"http://dbpedia.org/resource/Mrs._Winterbourne";"bad";1041.0
+"Multiple Sarcasms";5/7/10 12:00 AM;"http://dbpedia.org/resource/Multiple_Sarcasms";"bad";1042.0
+"My Blue Heaven";8/17/90 12:00 AM;"http://dbpedia.org/resource/My_Blue_Heaven_(1990_film)";"bad";1043.0
+"Play the Game";8/28/09 12:00 AM;"http://dbpedia.org/resource/Play_the_Game_(film)";"bad";1044.0
+"Post Grad";8/21/09 12:00 AM;"http://dbpedia.org/resource/Post_Grad";"bad";1045.0
+"Resident Evil: Apocalypse";9/10/04 12:00 AM;"http://dbpedia.org/resource/Resident_Evil:_Apocalypse";"bad";1046.0
+"Returning Mickey Stern";4/25/03 12:00 AM;"http://dbpedia.org/resource/Returning_Mickey_Stern";"bad";1047.0
+"Salvation Boulevard";7/15/11 12:00 AM;"http://dbpedia.org/resource/Salvation_Boulevard";"bad";1048.0
+"Scooby-Doo";6/14/02 12:00 AM;"http://dbpedia.org/resource/Scooby-Doo_(film)";"bad";1049.0
+"Sphere";2/13/98 12:00 AM;"http://dbpedia.org/resource/Sphere_(film)";"bad";1050.0
+"Star Wars: The Clone Wars";8/15/08 12:00 AM;"http://dbpedia.org/resource/Star_Wars:_The_Clone_Wars_(film)";"bad";1051.0
+"Stateside";5/21/04 12:00 AM;"http://dbpedia.org/resource/Stateside_(film)";"bad";1052.0
+"Stealth";7/29/05 12:00 AM;"http://dbpedia.org/resource/Stealth_(film)";"bad";1053.0
+"Teaching Mrs. Tingle";8/20/99 12:00 AM;"http://dbpedia.org/resource/Teaching_Mrs._Tingle";"bad";1054.0
+"The Babysitters";5/9/08 12:00 AM;"http://dbpedia.org/resource/The_Babysitters";"bad";1055.0
+"The Big Blue";7/14/00 12:00 AM;"http://dbpedia.org/resource/The_Big_Blue";"bad";1056.0
+"The Forsaken";4/27/01 12:00 AM;"http://dbpedia.org/resource/The_Forsaken_(film)";"bad";1057.0
+"The Guillotines";6/14/13 12:00 AM;"http://dbpedia.org/resource/The_Guillotines";"bad";1058.0
+"The Perfect Score";1/30/04 12:00 AM;"http://dbpedia.org/resource/The_Perfect_Score";"bad";1059.0
+"The Three Musketeers";10/21/11 12:00 AM;"http://dbpedia.org/resource/The_Three_Musketeers_(2011_film)";"bad";1060.0
+"Transformers: Revenge of the Fallen";6/24/09 12:00 AM;"http://dbpedia.org/resource/Transformers:_Revenge_of_the_Fallen";"bad";1061.0
+"Two Can Play That Game";9/7/01 12:00 AM;"http://dbpedia.org/resource/Two_Can_Play_That_Game";"bad";1062.0
+"Universal Soldier";7/10/92 12:00 AM;"http://dbpedia.org/resource/Universal_Soldier_(1992_film)";"bad";1063.0
+"Urban Legend";9/25/98 12:00 AM;"http://dbpedia.org/resource/Urban_Legend_(film)";"bad";1064.0
+"Van Helsing";5/7/04 12:00 AM;"http://dbpedia.org/resource/Van_Helsing_(film)";"bad";1065.0
+"When Harry Tries to Marry";4/22/11 12:00 AM;"http://dbpedia.org/resource/When_Harry_Tries_to_Marry";"bad";1066.0
+"Xanadu";8/8/80 12:00 AM;"http://dbpedia.org/resource/Xanadu_(film)";"bad";1067.0
+"Yogi Bear";12/17/10 12:00 AM;"http://dbpedia.org/resource/Yogi_Bear_(film)";"bad";1068.0
+"$pent";7/21/00 12:00 AM;"http://dbpedia.org/resource/$pent";"bad";1069.0
+"10,000 BC";3/7/08 12:00 AM;"http://dbpedia.org/resource/10,000_BC_(film)";"bad";1070.0
+"15 Minutes";3/9/01 12:00 AM;"http://dbpedia.org/resource/15_Minutes";"bad";1071.0
+"21 and Over";3/1/13 12:00 AM;"http://dbpedia.org/resource/21_and_Over_(film)";"bad";1072.0
+"All About the Benjamins";3/8/02 12:00 AM;"http://dbpedia.org/resource/All_About_the_Benjamins";"bad";1073.0
+"Basic";3/28/03 12:00 AM;"http://dbpedia.org/resource/Basic_(film)";"bad";1074.0
+"Bringing Up Bobby";9/28/12 12:00 AM;"http://dbpedia.org/resource/Bringing_Up_Bobby";"bad";1075.0
+"Cheaper by the Dozen 2";12/21/05 12:00 AM;"http://dbpedia.org/resource/Cheaper_by_the_Dozen_2";"bad";1076.0
+"Copperhead";6/28/13 12:00 AM;"http://dbpedia.org/resource/Copperhead_(film)";"bad";1077.0
+"Crimewave";4/25/86 12:00 AM;"http://dbpedia.org/resource/Crimewave";"bad";1078.0
+"Dead & Breakfast";4/20/05 12:00 AM;"http://dbpedia.org/resource/Dead_&_Breakfast";"bad";1079.0
+"Dead or Alive: Final";11/29/02 12:00 AM;"http://dbpedia.org/resource/Dead_or_Alive:_Final";"bad";1080.0
+"Dead Silence";3/16/07 12:00 AM;"http://dbpedia.org/resource/Dead_Silence";"bad";1081.0
+"Demolition Man";10/8/93 12:00 AM;"http://dbpedia.org/resource/Demolition_Man_(film)";"bad";1082.0
+"Doom";10/21/05 12:00 AM;"http://dbpedia.org/resource/Doom_(film)";"bad";1083.0
+"Eulogy";10/15/04 12:00 AM;"http://dbpedia.org/resource/Eulogy_(film)";"bad";1084.0
+"Even Money";5/18/07 12:00 AM;"http://dbpedia.org/resource/Even_Money_(film)";"bad";1085.0
+"Excess Baggage";8/29/97 12:00 AM;"http://dbpedia.org/resource/Excess_Baggage";"bad";1086.0
+"Fireflies in the Garden";10/14/11 12:00 AM;"http://dbpedia.org/resource/Fireflies_in_the_Garden";"bad";1087.0
+"Ghosts of Girlfriends Past";5/1/09 12:00 AM;"http://dbpedia.org/resource/Ghosts_of_Girlfriends_Past";"bad";1088.0
+"Grizzly Falls";1/28/00 12:00 AM;"http://dbpedia.org/resource/Grizzly_Falls";"bad";1089.0
+"Hair Show";10/15/04 12:00 AM;"http://dbpedia.org/resource/Hair_Show";"bad";1090.0
+"In Shifting Sands: The Truth About Unscom and the Disarming of Iraq";12/27/02 12:00 AM;"http://dbpedia.org/resource/In_Shifting_Sands:_The_Truth_About_Unscom_and_the_Disarming_of_Iraq";"bad";1091.0
+"Kill Me Later";9/14/01 12:00 AM;"http://dbpedia.org/resource/Kill_Me_Later";"bad";1092.0
+"Lake Placid";7/16/99 12:00 AM;"http://dbpedia.org/resource/Lake_Placid_(film)";"bad";1093.0
+"Law Abiding Citizen";10/16/09 12:00 AM;"http://dbpedia.org/resource/Law_Abiding_Citizen";"bad";1094.0
+"Mission to Mars";3/10/00 12:00 AM;"http://dbpedia.org/resource/Mission_to_Mars";"bad";1095.0
+"Motherhood";10/23/09 12:00 AM;"http://dbpedia.org/resource/Motherhood_(film)";"bad";1096.0
+"Ninja Assassin";11/25/09 12:00 AM;"http://dbpedia.org/resource/Ninja_Assassin";"bad";1097.0
+"Otto; or, Up with Dead People";11/7/08 12:00 AM;"http://dbpedia.org/resource/Otto;_or_Up_with_Dead_People";"bad";1098.0
+"Snow Day";2/11/00 12:00 AM;"http://dbpedia.org/resource/Snow_Day_(film)";"bad";1099.0
+"Tamara";2/3/06 12:00 AM;"http://dbpedia.org/resource/Tamara_(2005_film)";"bad";1100.0
