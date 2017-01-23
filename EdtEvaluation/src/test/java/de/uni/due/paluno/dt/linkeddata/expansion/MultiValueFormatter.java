@@ -72,7 +72,7 @@ public class MultiValueFormatter {
 //			//formatWithBinarySets test
 			
 			//1. load arff or csv file
-			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\EdtEvaluation\\data\\Inst2Both.csv", ",", 2);
+			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\newData\\inst5.csv", ",", 2);
 			
 			System.out.println(res);
 			
@@ -107,7 +107,7 @@ public class MultiValueFormatter {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("F:\\Workspace_Bachelor_Arbeit\\EdtEvaluation\\data\\Inst2BothMultiFormated.csv"));
+		 saver.setFile(new File("F:\\Workspace_Bachelor_Arbeit\\EdtEvaluation\\data\\Test5.csv"));
 		 saver.writeBatch();
 	}
 	
@@ -547,7 +547,7 @@ public class MultiValueFormatter {
 		return data;
 	}
 
-	private Instances loadCSV(String csvPath, String separator, int classIndex) throws Exception	
+	public Instances loadCSV(String csvPath, String separator, int classIndex) throws Exception	
 	{
 		CSVLoader trainDataLoader = new CSVLoader();
   		trainDataLoader.setFieldSeparator(separator);
