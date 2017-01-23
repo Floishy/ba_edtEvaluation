@@ -40,12 +40,14 @@ public class TraningDataExpansion {
 		
 		Expander expander = new Expander(trainData,expansionTool);
 		
-		expander.expanding(8);
+		expander.expanding(5);
 
+		
+		System.out.println("Finished Expanding!");
 		
 		MultiValueFormatter formatter = new MultiValueFormatter();
 		
-		Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\data\\Inst2Both.csv", ",", 2);
+		Instances res = formatter.loadCSV("newData/inst"+5+".csv", ",", 2);
 		
 		
 		//2. format the loaded data with binary sets
@@ -55,7 +57,9 @@ public class TraningDataExpansion {
 		
 		formatter.saveInstanceToCSV(res);
 		
-	
+		System.out.println("Writing finished");
+		
+		
 	}
 	
 	

@@ -107,7 +107,7 @@ public class MultiValueFormatter {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("F:\\Workspace_Bachelor_Arbeit\\EdtEvaluation\\data\\Test5.csv"));
+		 saver.setFile(new File("newData/test"+5+".csv"));
 		 saver.writeBatch();
 	}
 	
