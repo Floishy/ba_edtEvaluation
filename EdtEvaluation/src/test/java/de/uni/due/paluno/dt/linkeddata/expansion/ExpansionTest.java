@@ -28,7 +28,7 @@ public class ExpansionTest {
 	@Test
 	public void expansionTest() throws IOException{
 		
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Beans2.xml");
 		TestConfiguration tc = context.getBean(TestConfiguration.class);
 		
 		CSVLoader trainDataLoader = new CSVLoader();
@@ -77,7 +77,7 @@ public class ExpansionTest {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/inst"+i+".csv"));
+		 saver.setFile(new File("newData/tryInst"+i+".csv"));
 		 saver.writeBatch();
 	}
 }
