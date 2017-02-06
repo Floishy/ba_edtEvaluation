@@ -5,7 +5,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -72,7 +74,10 @@ public class MultiValueFormatter {
 //			//formatWithBinarySets test
 			
 			//1. load arff or csv file
-			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\newData\\inst5.csv", ",", 2);
+			Calendar cal = Calendar.getInstance();
+			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+	        System.out.println( sdf.format(cal.getTime()) );
+			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\newData\\tryInst2.csv", ",", 2);
 			
 			System.out.println(res);
 			
@@ -82,6 +87,7 @@ public class MultiValueFormatter {
 			System.out.println(res);
 			
 			formatter.saveInstanceToCSV(res);
+			System.out.println( sdf.format(cal.getTime()) );
 			
 			//3. output the result to a file (you can not write res.toString() into a csv file!)
 //			formatter.writeFile(res.toString(), "C:\\Users\\philipp\\Desktop\\inst3BS.arff");
