@@ -77,7 +77,7 @@ public class MultiValueFormatter {
 			Calendar cal = Calendar.getInstance();
 			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 	        System.out.println( sdf.format(cal.getTime()) );
-			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\newData\\tryInst2.csv", ",", 2);
+			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\newData\\tryInst5.csv", ",", 2);
 			
 			System.out.println(res);
 			
@@ -113,7 +113,7 @@ public class MultiValueFormatter {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/test"+5+".csv"));
+		 saver.setFile(new File("newData/test"+"neu4"+".csv"));
 		 saver.writeBatch();
 	}
 	
