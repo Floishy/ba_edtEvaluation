@@ -23,7 +23,7 @@
         <!-- the ontology namespace -->
         <property name="ontologyNS" value="http://swrc.ontoware.org/ontology#"></property>
         <!-- The csv file -->
-        <property name="csvSource" value="src/test/resources/swrc_aifb_nov06/completeDataset.csv"></property>
+        <property name="csvSource" value="data/Inst2Both.csv"></property>
         <!-- The class index of the test data -->
         <property name="classIndex" value="2"></property>
         <!-- <property name="maxHops" value="5"></property> -->

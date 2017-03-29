@@ -46,7 +46,7 @@ public class ExpansionTest {
 		
 		
 		int i=0;
-		while(i<9){
+		while(i<2){
 //			Graph graph = Utils.graph(instance);
 //			graph.display();
 			writeTrainData(trainData, i);
@@ -77,7 +77,7 @@ public class ExpansionTest {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/tryInst"+i+".csv"));
+		 saver.setFile(new File("newData/NeuerTest"+i+".csv"));
 		 saver.writeBatch();
 	}
 }
