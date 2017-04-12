@@ -49,7 +49,7 @@ public class ExpansionTest {
 		while(i<2){
 //			Graph graph = Utils.graph(instance);
 //			graph.display();
-			writeTrainData(trainData, i);
+//			writeTrainData(trainData, i);
 			
 			Instance instance = trainData.get(0);
 			
@@ -66,6 +66,13 @@ public class ExpansionTest {
 			System.out.println(trainData.numAttributes());
 			System.out.println(trainData.getM_Attributes().size());
 			System.out.println(trainData.instance(0).attribute(48).value(0));
+			
+			for(int n = 0; n<trainData.numInstances();n++){
+				Instance inst = trainData.get(n);
+				for(int m = 0;m<inst.numAttributes();m++){
+					Attribute att = inst.attribute(m);
+				}
+			}
 
 			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
 			 
