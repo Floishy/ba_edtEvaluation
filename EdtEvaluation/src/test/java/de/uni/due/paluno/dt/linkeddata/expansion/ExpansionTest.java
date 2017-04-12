@@ -57,10 +57,16 @@ public class ExpansionTest {
 			graph.display();
 			
 			int count = graph.getAttributeCount();
+			ArrayList<Attribute> test = trainData.getM_Attributes();
 			
+			for(Attribute att : test){
+				System.out.println(att.name());
+			}
 			
 			System.out.println(trainData.numAttributes());
 			System.out.println(trainData.getM_Attributes().size());
+			System.out.println(trainData.instance(0).attribute(48).value(0));
+
 			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
 			 
 			

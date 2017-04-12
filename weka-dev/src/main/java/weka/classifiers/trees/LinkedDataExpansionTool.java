@@ -159,6 +159,14 @@ public class LinkedDataExpansionTool implements Serializable{
     		}	
     	}
     	
+    	System.out.println(newAttributesSet.size());
+    	
+    	for (AttributeSpecification newAttributes : newAttributesSet) {
+    		
+    		System.out.println(newAttributes.toString());
+		}
+    	
+    	
     	for (AttributeSpecification newAttributes : newAttributesSet) {
     		
     		instances = getOntologyExpansionUtils().addNewAttributes(instances, newAttributes);
