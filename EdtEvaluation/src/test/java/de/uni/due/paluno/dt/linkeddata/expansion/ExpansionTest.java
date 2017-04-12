@@ -28,7 +28,7 @@ public class ExpansionTest {
 	@Test
 	public void expansionTest() throws IOException{
 		
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Beans2.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Beans4.xml");
 		TestConfiguration tc = context.getBean(TestConfiguration.class);
 		
 		CSVLoader trainDataLoader = new CSVLoader();
@@ -56,6 +56,11 @@ public class ExpansionTest {
 			Graph graph = Utils.graph(instance);
 			graph.display();
 			
+			int count = graph.getAttributeCount();
+			
+			
+			System.out.println(trainData.numAttributes());
+			System.out.println(trainData.getM_Attributes().size());
 			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
 			 
 			
@@ -77,7 +82,7 @@ public class ExpansionTest {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/NeuerTest"+i+".csv"));
+		 saver.setFile(new File("newData/NeuerTest5hops"+i+".csv"));
 		 saver.writeBatch();
 	}
 }
