@@ -177,106 +177,208 @@ public class OntologyExpansionUtils {
 				continue;
 			}
 			
-			Resource resource=getResource(attributeValue);
+			String[] multiValue;
+			if (attributeValue.contains(Constants.multiValueSeparator)){
+				multiValue = attributeValue.split(Constants.multiValueSeparator);
+				int length = multiValue.length;
+				for(int n = 0;n<length;n++){
+					Resource resource=getResource(multiValue[n]);
+					if(resource!=null){
+						
+						Statement property = resource.getProperty(this.model.getProperty(rdfs, "instanceof"));
+						
+						List<Statement> resourceProperties = new LinkedList<Statement>();
+						
+						resourceProperties.addAll(getResourceProperties(resource));
+												
+						
+						//XXX SAME AS RESOURCE
+//						List<Resource> sameResources = findSameAs(resource);
+//						
+//						for (Resource sameResource : sameResources) {
+//							resourceProperties.addAll(getResourceProperties(sameResource));
+//						}
+						
+						//---------------------
+						
+						//TODO YTE Set to missing instead of deleting RDF resources which are replaced through their attributes
+						//TODO YTE Delete doesn't work
+					//	instance.setMissing(attributePosition);
+						
+						//Collections.sort(resourceProperties, new StatementComparator());
+						
+						
+						//HashMap<K, V>
+						
+						for(Statement stmt:resourceProperties){
+							 Resource  subject   = stmt.getSubject();    
+							 Property  predicate = stmt.getPredicate();  
+							 RDFNode   object    = stmt.getObject(); 
+							 
+							//Build the name of the namespace and the localname
+							 //Also store the previous attibute name
+							 //XXX New Attributes Name Contstuction
+							 String attributeName = orrAttributeName+elementSeparator+getPropertyName(predicate);
+							
+							 if(addedAttributes.contains(attributeName)){
+								 System.out.println("contained");
+							 }
+							 
+							 
+							 if(attributesToConsider!=null){
+								 if(!attributesToConsider.contains(attributeName)){
+									 continue;
+								 }
+								 else{
+									 addedAttributes.add(attributeName);
+								 }
+							 }
+							 
+							 if(!newAttributes.containsKey(attributeName)){
+								 newAttributes.put(attributeName, new String[numInstances]);
+							 }
+							 
+							 String value = object.toString();
+							 
+							 if (object instanceof Resource) {
+								 //Object is another resource
+								 String storedValue = newAttributes.get(attributeName)[instancePosition];
+								 if(storedValue==null){
+									 newAttributes.get(attributeName)[instancePosition]=value;
+								 }
+								 else{
+									 //Multi-value
+									 storedValue = storedValue+Constants.multiValueSeparator+value;
+									 newAttributes.get(attributeName)[instancePosition]=storedValue;
+								 }
+								 attributeType.put(attributeName, DataType.String);
+							 } else {
+								 //Object is literal
+								 Literal literal = object.asLiteral();
+								 RDFDatatype datatype = literal.getDatatype();
+								 
+								 //TODO XML schema types should be also be converted to numeric
+								 
+								 if(datatype.getURI().equals("http://www.w3.org/2001/XMLSchema#double")){
+									 
+									 value = Double.toString(literal.getDouble());
+									 
+									 String storedValue = newAttributes.get(attributeName)[instancePosition];
+									 if(storedValue==null){
+										 newAttributes.get(attributeName)[instancePosition]=value;
+									 }
+									 else{
+										 //Multi-value
+										 storedValue = storedValue+Constants.multiValueSeparator+value;
+										 newAttributes.get(attributeName)[instancePosition]=storedValue;
+									 }
+									
+									 attributeType.put(attributeName, DataType.Numeric);
+								 }
+								 else if(datatype.getURI().equals("http://www.w3.org/2001/XMLSchema#gYear")){
+									 value = literal.toString();
+									 
+									 String storedValue = newAttributes.get(attributeName)[instancePosition];
+									 if(storedValue==null){
+										 newAttributes.get(attributeName)[instancePosition]=value;
+									 }
+									 else{
+										 //Multi-value
+										 storedValue = storedValue+Constants.multiValueSeparator+value;
+										 newAttributes.get(attributeName)[instancePosition]=storedValue;
+									 }
+									 attributeType.put(attributeName, DataType.String);
+								 }
+								 else{
+									 String storedValue = newAttributes.get(attributeName)[instancePosition];
+									 if(storedValue==null){
+										 newAttributes.get(attributeName)[instancePosition]=value;
+									 }
+									 else{
+										 //Multi-value
+										 storedValue = storedValue+Constants.multiValueSeparator+value;
+										 newAttributes.get(attributeName)[instancePosition]=storedValue;
+									 }
+									 if(NumberUtils.isNumber(value)){
+										attributeType.put(attributeName, DataType.Numeric);
+									 }
+									 else{
+										attributeType.put(attributeName, DataType.String);
+									 }
+								 }
+								 
+							 }		 
+						}
+						//getResourceAttributes(resourceProperties, orrAttributeName, attributeType, newAttributes, numInstances, instancePosition,attributesToConsider);
+					}
+				}
+			}
 			
-			
-			
-			//TODO here all instances have to be checked before this exception is thrown
-			if(resource!=null){
-				
-				Statement property = resource.getProperty(this.model.getProperty(rdfs, "instanceof"));
-				
-				List<Statement> resourceProperties = new LinkedList<Statement>();
-				
-				resourceProperties.addAll(getResourceProperties(resource));
-										
-				
-				//XXX SAME AS RESOURCE
-//				List<Resource> sameResources = findSameAs(resource);
-//				
-//				for (Resource sameResource : sameResources) {
-//					resourceProperties.addAll(getResourceProperties(sameResource));
-//				}
-				
-				//---------------------
-				
-				//TODO YTE Set to missing instead of deleting RDF resources which are replaced through their attributes
-				//TODO YTE Delete doesn't work
-			//	instance.setMissing(attributePosition);
-				
-				//Collections.sort(resourceProperties, new StatementComparator());
+			else{
+				Resource resource=getResource(attributeValue);
 				
 				
-				//HashMap<K, V>
 				
-				for(Statement stmt:resourceProperties){
-					 Resource  subject   = stmt.getSubject();    
-					 Property  predicate = stmt.getPredicate();  
-					 RDFNode   object    = stmt.getObject(); 
-					 
-					//Build the name of the namespace and the localname
-					 //Also store the previous attibute name
-					 //XXX New Attributes Name Contstuction
-					 String attributeName = orrAttributeName+elementSeparator+getPropertyName(predicate);
+				//TODO here all instances have to be checked before this exception is thrown
+				if(resource!=null){
 					
-					 if(addedAttributes.contains(attributeName)){
-						 System.out.println("contained");
-					 }
-					 
-					 
-					 if(attributesToConsider!=null){
-						 if(!attributesToConsider.contains(attributeName)){
-							 continue;
-						 }
-						 else{
-							 addedAttributes.add(attributeName);
-						 }
-					 }
-					 
-					 if(!newAttributes.containsKey(attributeName)){
-						 newAttributes.put(attributeName, new String[numInstances]);
-					 }
-					 
-					 String value = object.toString();
-					 
-					 if (object instanceof Resource) {
-						 //Object is another resource
-						 String storedValue = newAttributes.get(attributeName)[instancePosition];
-						 if(storedValue==null){
-							 newAttributes.get(attributeName)[instancePosition]=value;
-						 }
-						 else{
-							 //Multi-value
-							 storedValue = storedValue+Constants.multiValueSeparator+value;
-							 newAttributes.get(attributeName)[instancePosition]=storedValue;
-						 }
-						 attributeType.put(attributeName, DataType.String);
-					 } else {
-						 //Object is literal
-						 Literal literal = object.asLiteral();
-						 RDFDatatype datatype = literal.getDatatype();
+					Statement property = resource.getProperty(this.model.getProperty(rdfs, "instanceof"));
+					
+					List<Statement> resourceProperties = new LinkedList<Statement>();
+					
+					resourceProperties.addAll(getResourceProperties(resource));
+											
+					
+					//XXX SAME AS RESOURCE
+	//				List<Resource> sameResources = findSameAs(resource);
+	//				
+	//				for (Resource sameResource : sameResources) {
+	//					resourceProperties.addAll(getResourceProperties(sameResource));
+	//				}
+					
+					//---------------------
+					
+					//TODO YTE Set to missing instead of deleting RDF resources which are replaced through their attributes
+					//TODO YTE Delete doesn't work
+				//	instance.setMissing(attributePosition);
+					
+					//Collections.sort(resourceProperties, new StatementComparator());
+					
+					
+					//HashMap<K, V>
+					
+					for(Statement stmt:resourceProperties){
+						 Resource  subject   = stmt.getSubject();    
+						 Property  predicate = stmt.getPredicate();  
+						 RDFNode   object    = stmt.getObject(); 
 						 
-						 //TODO XML schema types should be also be converted to numeric
+						//Build the name of the namespace and the localname
+						 //Also store the previous attibute name
+						 //XXX New Attributes Name Contstuction
+						 String attributeName = orrAttributeName+elementSeparator+getPropertyName(predicate);
+						
+						 if(addedAttributes.contains(attributeName)){
+							 System.out.println("contained");
+						 }
 						 
-						 if(datatype.getURI().equals("http://www.w3.org/2001/XMLSchema#double")){
-							 
-							 value = Double.toString(literal.getDouble());
-							 
-							 String storedValue = newAttributes.get(attributeName)[instancePosition];
-							 if(storedValue==null){
-								 newAttributes.get(attributeName)[instancePosition]=value;
+						 
+						 if(attributesToConsider!=null){
+							 if(!attributesToConsider.contains(attributeName)){
+								 continue;
 							 }
 							 else{
-								 //Multi-value
-								 storedValue = storedValue+Constants.multiValueSeparator+value;
-								 newAttributes.get(attributeName)[instancePosition]=storedValue;
+								 addedAttributes.add(attributeName);
 							 }
-							
-							 attributeType.put(attributeName, DataType.Numeric);
 						 }
-						 else if(datatype.getURI().equals("http://www.w3.org/2001/XMLSchema#gYear")){
-							 value = literal.toString();
-							 
+						 
+						 if(!newAttributes.containsKey(attributeName)){
+							 newAttributes.put(attributeName, new String[numInstances]);
+						 }
+						 
+						 String value = object.toString();
+						 
+						 if (object instanceof Resource) {
+							 //Object is another resource
 							 String storedValue = newAttributes.get(attributeName)[instancePosition];
 							 if(storedValue==null){
 								 newAttributes.get(attributeName)[instancePosition]=value;
@@ -287,26 +389,63 @@ public class OntologyExpansionUtils {
 								 newAttributes.get(attributeName)[instancePosition]=storedValue;
 							 }
 							 attributeType.put(attributeName, DataType.String);
-						 }
-						 else{
-							 String storedValue = newAttributes.get(attributeName)[instancePosition];
-							 if(storedValue==null){
-								 newAttributes.get(attributeName)[instancePosition]=value;
+						 } else {
+							 //Object is literal
+							 Literal literal = object.asLiteral();
+							 RDFDatatype datatype = literal.getDatatype();
+							 
+							 //TODO XML schema types should be also be converted to numeric
+							 
+							 if(datatype.getURI().equals("http://www.w3.org/2001/XMLSchema#double")){
+								 
+								 value = Double.toString(literal.getDouble());
+								 
+								 String storedValue = newAttributes.get(attributeName)[instancePosition];
+								 if(storedValue==null){
+									 newAttributes.get(attributeName)[instancePosition]=value;
+								 }
+								 else{
+									 //Multi-value
+									 storedValue = storedValue+Constants.multiValueSeparator+value;
+									 newAttributes.get(attributeName)[instancePosition]=storedValue;
+								 }
+								
+								 attributeType.put(attributeName, DataType.Numeric);
+							 }
+							 else if(datatype.getURI().equals("http://www.w3.org/2001/XMLSchema#gYear")){
+								 value = literal.toString();
+								 
+								 String storedValue = newAttributes.get(attributeName)[instancePosition];
+								 if(storedValue==null){
+									 newAttributes.get(attributeName)[instancePosition]=value;
+								 }
+								 else{
+									 //Multi-value
+									 storedValue = storedValue+Constants.multiValueSeparator+value;
+									 newAttributes.get(attributeName)[instancePosition]=storedValue;
+								 }
+								 attributeType.put(attributeName, DataType.String);
 							 }
 							 else{
-								 //Multi-value
-								 storedValue = storedValue+Constants.multiValueSeparator+value;
-								 newAttributes.get(attributeName)[instancePosition]=storedValue;
+								 String storedValue = newAttributes.get(attributeName)[instancePosition];
+								 if(storedValue==null){
+									 newAttributes.get(attributeName)[instancePosition]=value;
+								 }
+								 else{
+									 //Multi-value
+									 storedValue = storedValue+Constants.multiValueSeparator+value;
+									 newAttributes.get(attributeName)[instancePosition]=storedValue;
+								 }
+								 if(NumberUtils.isNumber(value)){
+									attributeType.put(attributeName, DataType.Numeric);
+								 }
+								 else{
+									attributeType.put(attributeName, DataType.String);
+								 }
 							 }
-							 if(NumberUtils.isNumber(value)){
-								attributeType.put(attributeName, DataType.Numeric);
-							 }
-							 else{
-								attributeType.put(attributeName, DataType.String);
-							 }
-						 }
-						 
-					 }		 
+							 
+						 }		 
+					}
 				}
 				//getResourceAttributes(resourceProperties, orrAttributeName, attributeType, newAttributes, numInstances, instancePosition,attributesToConsider);
 			}

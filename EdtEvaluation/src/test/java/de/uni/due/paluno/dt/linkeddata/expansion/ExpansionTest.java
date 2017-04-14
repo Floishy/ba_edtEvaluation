@@ -46,10 +46,10 @@ public class ExpansionTest {
 		
 		
 		int i=0;
-		while(i<2){
+		while(i<1){
 //			Graph graph = Utils.graph(instance);
 //			graph.display();
-//			writeTrainData(trainData, i);
+
 			
 			Instance instance = trainData.get(0);
 			
@@ -63,22 +63,22 @@ public class ExpansionTest {
 				System.out.println(att.name());
 			}
 			
-			System.out.println(trainData.numAttributes());
-			System.out.println(trainData.getM_Attributes().size());
-			System.out.println(trainData.instance(0).attribute(48).value(0));
-			
-			for(int n = 0; n<trainData.numInstances();n++){
-				Instance inst = trainData.get(n);
-				for(int m = 0;m<inst.numAttributes();m++){
-					Attribute att = inst.attribute(m);
-				}
-			}
+//			System.out.println(trainData.numAttributes());
+//			System.out.println(trainData.getM_Attributes().size());
+//			System.out.println(trainData.instance(0).attribute(48).value(0));
+//			
+//			for(int n = 0; n<trainData.numInstances();n++){
+//				Instance inst = trainData.get(n);
+//				for(int m = 0;m<inst.numAttributes();m++){
+//					Attribute att = inst.attribute(m);
+//				}
+//			}
 
 			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
 			 
 			
 			i= i+1;
-			
+			writeTrainData(trainData, i);
 			try {
 				TimeUnit.SECONDS.sleep(5);
 			} catch (InterruptedException e) {
@@ -95,7 +95,7 @@ public class ExpansionTest {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/NeuerTest5hops"+i+".csv"));
+		 saver.setFile(new File("newData/NeuerTest4HopsAllInst"+i+".csv"));
 		 saver.writeBatch();
 	}
 }
