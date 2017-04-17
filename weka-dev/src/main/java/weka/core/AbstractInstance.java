@@ -556,6 +556,8 @@ public abstract class AbstractInstance implements Instance, Serializable,
     int valIndex = att.indexOfValue(value);
     if (valIndex == -1) {
       if (att.isNominal()) {
+    	  System.out.println(value);
+    	  System.out.println(att.name());
         throw new IllegalArgumentException(
           "Value not defined for given nominal attribute!");
       } else {

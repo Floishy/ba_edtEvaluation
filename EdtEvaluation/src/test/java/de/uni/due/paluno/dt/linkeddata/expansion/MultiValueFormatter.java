@@ -79,12 +79,25 @@ public class MultiValueFormatter {
 	        System.out.println( sdf.format(cal.getTime()) );
 			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\newData\\NeuerTest4HopsAllInst1.csv", ",", 2);
 			
-			System.out.println(res);
+			//System.out.println(res);
+			
+//			System.out.println(res.numAttributes());
+//			System.out.println(res.getM_Attributes().size());
+//			System.out.println(res.instance(0).attribute(132).value(0));
+//			System.out.println(res.instance(0).attribute(132).name());
+//			System.out.println(res.instance(0).numValues());
+//			for(Attribute att : res.getM_Attributes()){
+//				System.out.println(att.type());
+//				if (att.type()==0){
+//					System.out.println(att.name());
+//					System.out.println(att.value(0));
+//				}
+//			}
 			
 			//2. format the loaded data with binary sets
 			res = formatter.formatWithBinarySets(res, ";");
 			
-			System.out.println(res);
+			//System.out.println(res);
 			
 			formatter.saveInstanceToCSV(res);
 			System.out.println( sdf.format(cal.getTime()) );
@@ -105,6 +118,7 @@ public class MultiValueFormatter {
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 	
@@ -467,7 +481,10 @@ public class MultiValueFormatter {
 	}
 	
 	private Instances addAttribute(Instances data, String value, int index, String name){
-	
+		
+		if(index == 101){
+			System.out.println("now");
+		}
 		weka.core.Attribute newAttribute = createAttribute(name, value);
 		
 		Boolean isNewAttribute = false;
@@ -538,7 +555,7 @@ public class MultiValueFormatter {
 					for(int g = 0; g < savedValues.length; g++){
 						String newAttributeName = oldInstance.attribute(savedAttribute.index()).name().trim() + ":::" + savedValues[g].trim();
 						if(newAttributeName.equals( instance.attribute(i).name().trim() )){
-							instance.setValue(instance.attribute(i), savedValues[g]);
+							instance.setValue(instance.attribute(i), savedValues[g].trim());
 							instanceHasValue = true;
 							break;
 						}

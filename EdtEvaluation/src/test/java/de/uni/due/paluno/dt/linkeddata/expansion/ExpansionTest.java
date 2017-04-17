@@ -63,10 +63,15 @@ public class ExpansionTest {
 				System.out.println(att.name());
 			}
 			
-//			System.out.println(trainData.numAttributes());
-//			System.out.println(trainData.getM_Attributes().size());
-//			System.out.println(trainData.instance(0).attribute(48).value(0));
-//			
+			System.out.println(trainData.numAttributes());
+			System.out.println(trainData.getM_Attributes().size());
+			System.out.println(trainData.instance(0).attribute(132).value(0));
+			System.out.println(trainData.instance(0).attribute(132).name());
+			System.out.println(trainData.instance(0).numValues());
+			for(Attribute att : trainData.getM_Attributes()){
+				System.out.println(att.type());
+			}
+			
 //			for(int n = 0; n<trainData.numInstances();n++){
 //				Instance inst = trainData.get(n);
 //				for(int m = 0;m<inst.numAttributes();m++){
@@ -74,11 +79,11 @@ public class ExpansionTest {
 //				}
 //			}
 
-			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
+//			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
 			 
 			
 			i= i+1;
-			writeTrainData(trainData, i);
+//			writeTrainData(trainData, i);
 			try {
 				TimeUnit.SECONDS.sleep(5);
 			} catch (InterruptedException e) {
