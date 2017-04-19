@@ -23,7 +23,7 @@
         <!-- the ontology namespace -->
         <property name="ontologyNS" value="http://swrc.ontoware.org/ontology#"></property>
         <!-- The csv file -->
-        <property name="csvSource" value="newData/NeuerTest4HopsAllInst1.csv"></property>
+        <property name="csvSource" value="newData/NeuerTest4hops1.csv"></property>
         <!-- The class index of the test data -->
         <property name="classIndex" value="2"></property>
         <!-- <property name="maxHops" value="5"></property> -->

@@ -57,33 +57,33 @@ public class ExpansionTest {
 			graph.display();
 			
 			int count = graph.getAttributeCount();
-			ArrayList<Attribute> test = trainData.getM_Attributes();
-			
-			for(Attribute att : test){
-				System.out.println(att.name());
-			}
-			
-			System.out.println(trainData.numAttributes());
-			System.out.println(trainData.getM_Attributes().size());
-			System.out.println(trainData.instance(0).attribute(132).value(0));
-			System.out.println(trainData.instance(0).attribute(132).name());
-			System.out.println(trainData.instance(0).numValues());
-			for(Attribute att : trainData.getM_Attributes()){
-				System.out.println(att.type());
-			}
-			
-//			for(int n = 0; n<trainData.numInstances();n++){
-//				Instance inst = trainData.get(n);
-//				for(int m = 0;m<inst.numAttributes();m++){
-//					Attribute att = inst.attribute(m);
-//				}
+//			ArrayList<Attribute> test = trainData.getM_Attributes();
+//			
+//			for(Attribute att : test){
+//				System.out.println(att.name());
 //			}
+//			
+//			System.out.println(trainData.numAttributes());
+//			System.out.println(trainData.getM_Attributes().size());
+//			System.out.println(trainData.instance(0).attribute(132).value(0));
+//			System.out.println(trainData.instance(0).attribute(132).name());
+//			System.out.println(trainData.instance(0).numValues());
+//			for(Attribute att : trainData.getM_Attributes()){
+//				System.out.println(att.type());
+//			}
+//			
+////			for(int n = 0; n<trainData.numInstances();n++){
+////				Instance inst = trainData.get(n);
+////				for(int m = 0;m<inst.numAttributes();m++){
+////					Attribute att = inst.attribute(m);
+////				}
+////			}
 
-//			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
+			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
 			 
 			
 			i= i+1;
-//			writeTrainData(trainData, i);
+			writeTrainData(trainData, i);
 			try {
 				TimeUnit.SECONDS.sleep(5);
 			} catch (InterruptedException e) {
@@ -100,7 +100,7 @@ public class ExpansionTest {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/NeuerTest4HopsAllInst"+i+".csv"));
+		 saver.setFile(new File("newData/NeuerTest4HopsAllInstNewImplementation2"+i+".csv"));
 		 saver.writeBatch();
 	}
 }
