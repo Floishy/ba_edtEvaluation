@@ -28,11 +28,11 @@ public class ExpansionTest {
 	@Test
 	public void expansionTest() throws IOException{
 		
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Beans4.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansMutag.xml");
 		TestConfiguration tc = context.getBean(TestConfiguration.class);
 		
 		CSVLoader trainDataLoader = new CSVLoader();
-		trainDataLoader.setFieldSeparator(",");
+		trainDataLoader.setFieldSeparator("\t");
 		trainDataLoader.setSource(new File(tc.getCsvSource()));
 		
 		Instances trainData = trainDataLoader.getDataSet();
@@ -46,7 +46,7 @@ public class ExpansionTest {
 		
 		
 		int i=0;
-		while(i<1){
+		while(i<5){
 //			Graph graph = Utils.graph(instance);
 //			graph.display();
 
@@ -100,7 +100,8 @@ public class ExpansionTest {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/NeuerTest4HopsAllInstNewImplementation2"+i+".csv"));
+		 saver.setFile(new File("src/test/resources/MUTAG/MutagTab0"+i+".csv"));
+		 saver.setFieldSeparator("\t");
 		 saver.writeBatch();
 	}
 }

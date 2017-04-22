@@ -29,7 +29,7 @@ import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToNominal;
 
 public class MultiValueFormatter {
-
+	static long startTime = System.currentTimeMillis();
 	public static void main(String[] args)
 	{
 
@@ -76,9 +76,10 @@ public class MultiValueFormatter {
 			//1. load arff or csv file
 			Calendar cal = Calendar.getInstance();
 			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-	        System.out.println( sdf.format(cal.getTime()) );
-			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\newData\\temp.csv", ",", 2);
 			
+	        for(int i =4;i<=4;i++){
+			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\src\\test\\resources\\MUTAG\\mutagtraining04"+".csv", ",", 2);
+			System.out.println(startTime/1000);
 			//System.out.println(res);
 			
 //			System.out.println(res.numAttributes());
@@ -99,9 +100,35 @@ public class MultiValueFormatter {
 			
 			//System.out.println(res);
 			
-			formatter.saveInstanceToCSV(res);
-			System.out.println( sdf.format(cal.getTime()) );
-			
+			formatter.saveInstanceToCSV(res,"src/test/resources/MUTAG/",i+"HopsMutagTraining");
+			System.out.println((System.currentTimeMillis()-startTime)/1000 );
+	        }
+	        for(int i =4;i<=4;i++){
+				Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\src\\test\\resources\\MUTAG\\mutagtest04"+".csv", ",", 2);
+				System.out.println(startTime/1000);
+				//System.out.println(res);
+				
+//				System.out.println(res.numAttributes());
+//				System.out.println(res.getM_Attributes().size());
+//				System.out.println(res.instance(0).attribute(132).value(0));
+//				System.out.println(res.instance(0).attribute(132).name());
+//				System.out.println(res.instance(0).numValues());
+//				for(Attribute att : res.getM_Attributes()){
+//					System.out.println(att.type());
+//					if (att.type()==0){
+//						System.out.println(att.name());
+//						System.out.println(att.value(0));
+//					}
+//				}
+				
+				//2. format the loaded data with binary sets
+				res = formatter.formatWithBinarySets(res, ";");
+				
+				//System.out.println(res);
+				
+				formatter.saveInstanceToCSV(res,"src/test/resources/MUTAG/",i+"HopsMutagTest");
+				System.out.println((System.currentTimeMillis()-startTime)/1000 );
+		    }
 			//3. output the result to a file (you can not write res.toString() into a csv file!)
 //			formatter.writeFile(res.toString(), "C:\\Users\\philipp\\Desktop\\inst3BS.arff");
 //			
@@ -123,11 +150,11 @@ public class MultiValueFormatter {
 	}
 	
 	
-	public void saveInstanceToCSV(Instances inst) throws IOException{
+	public void saveInstanceToCSV(Instances inst,String pathPrefix,String filename) throws IOException{
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("newData/test"+"4HopsNotRemovedBinaryNew"+".csv"));
+		 saver.setFile(new File(pathPrefix + filename +".csv"));
 		 saver.writeBatch();
 	}
 	
@@ -319,20 +346,25 @@ public class MultiValueFormatter {
 	{
 		//find the multi-valued attributes
 		LinkedList<weka.core.Attribute> multiValuedAttributes = getMultiValuedAttributes(data, separator);
-		
+		System.out.println("Multi found");
+		System.out.println((System.currentTimeMillis()-startTime)/1000 );
 		//list all possible values
 		HashMap<String, LinkedList<String>> values = listPossibleValues(data, multiValuedAttributes, separator);
-		
+		System.out.println("Listing");
+		System.out.println((System.currentTimeMillis()-startTime)/1000 );
+		System.out.println(values.size());
 		//replace original attributes with attributes derived from the values and save old Instances and old Attributes before they were changed
 		ArrayList<Object> container = replaceAttributesWithBinarySets(data, multiValuedAttributes, values);		
 		data = (Instances) container.get(0);
 		HashMap<Instance,Pair<Instance,HashMap<Attribute,LinkedList<Attribute>>>> attributeMapping = 
 				(HashMap<Instance,Pair<Instance,HashMap<Attribute,LinkedList<Attribute>>>>) container.get(1);
 		LinkedList<weka.core.Attribute> newAttributes = (LinkedList<weka.core.Attribute>) container.get(2);
-		
+		System.out.println("Replaced");
+		System.out.println((System.currentTimeMillis()-startTime)/1000 );
 		//fill new Attributes with appropriate values
 		data = fillNewAttributes(data, multiValuedAttributes, newAttributes, attributeMapping, separator);
-		
+		System.out.println("adding finished");
+		System.out.println((System.currentTimeMillis()-startTime)/1000 );
 		return data;
 	}
 	
@@ -482,9 +514,7 @@ public class MultiValueFormatter {
 	
 	private Instances addAttribute(Instances data, String value, int index, String name){
 		
-		if(index == 101){
-			System.out.println("now");
-		}
+
 		weka.core.Attribute newAttribute = createAttribute(name, value);
 		
 		Boolean isNewAttribute = false;
@@ -580,7 +610,7 @@ public class MultiValueFormatter {
   		trainData.setClassIndex(classIndex);
   		
   		trainData = filterStringAttributes(trainData);
-  
+  		System.out.println("Loaded");
   		return trainData;
 	}
 	

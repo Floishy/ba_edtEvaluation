@@ -586,6 +586,8 @@ public  List<Resource> getResources(String value){
 		//TODO YTE a better handling of attributes is required
 		if(name.endsWith("identifier")){
 			return false;
+		}else if(name.contains("hasLithogenesis")||name.contains("isMutagenic")){
+			return false;
 		}
 		return true;
 	}
