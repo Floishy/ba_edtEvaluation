@@ -1,5 +1,6 @@
 package weka.classifiers.trees;
 
+import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,6 +16,9 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.tdb.TDBFactory;
 import org.apache.jena.util.FileManager;
+
+import org.apache.jena.query.Query;
+import org.apache.jena.query.Dataset;
 
 import weka.classifiers.trees.ht.ActiveHNode;
 import weka.classifiers.trees.ht.NodeInstances;
@@ -207,8 +211,39 @@ public class LinkedDataExpansionTool implements Serializable{
 	
 	public Model getModel(){
 		if(model==null){
-			model = TDBFactory.createDataset().getDefaultModel();
-			FileManager.get().readModel(model,testConfiguration.getLinkedData() ,"RDF/XML");
+//			if(testConfiguration.getLinkedData().contains("DBPedia")){
+//				System.out.println("WE start the code!!");
+//				Dataset dataset = TDBFactory.createDataset("F:\\DBPedia_Data\\Output");
+//
+//				// assume we want the default model, or we could get a named model here
+//				Model tdb = dataset.getDefaultModel();
+//
+//				// read the input file - only needs to be done once
+//
+//				File folder = new File(testConfiguration.getLinkedData());
+//				if (folder.listFiles().length > 0)
+//					System.out.println("We are at the correct file");
+//				for (final File fileEntry : folder.listFiles()) {
+//
+//					System.out.println(fileEntry.getName());
+//					if (fileEntry.getName().contains(".bz2"))
+//						continue;
+//					System.out.println(fileEntry.getAbsolutePath());
+//					System.out.println(fileEntry.getPath());
+//					try {
+//						FileManager.get().readModel(tdb, fileEntry.getPath(),
+//								"N-TRIPLES");
+//					} catch (Exception e) {
+//						System.out.println("File didn't finish");
+//						e.printStackTrace();
+//					}
+//				}
+//				dataset.close();
+//			}
+//			else{
+				model = TDBFactory.createDataset().getDefaultModel();
+				FileManager.get().readModel(model,testConfiguration.getLinkedData() ,"RDF/XML");
+//			}
 		}
 		return model;
 	}

@@ -28,7 +28,7 @@ public class ExpansionTest {
 	@Test
 	public void expansionTest() throws IOException{
 		
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansMutag.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansMCM.xml");
 		TestConfiguration tc = context.getBean(TestConfiguration.class);
 		
 		CSVLoader trainDataLoader = new CSVLoader();
@@ -57,11 +57,11 @@ public class ExpansionTest {
 			graph.display();
 			
 			int count = graph.getAttributeCount();
-//			ArrayList<Attribute> test = trainData.getM_Attributes();
-//			
-//			for(Attribute att : test){
-//				System.out.println(att.name());
-//			}
+			ArrayList<Attribute> test = trainData.getM_Attributes();
+			
+			for(Attribute att : test){
+				System.out.println(att.name());
+			}
 //			
 //			System.out.println(trainData.numAttributes());
 //			System.out.println(trainData.getM_Attributes().size());
@@ -100,7 +100,7 @@ public class ExpansionTest {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("src/test/resources/MUTAG/MutagTab0"+i+".csv"));
+		 saver.setFile(new File("F:\\DBPedia_Data\\MC_Movies\\MC_Movies0"+i+".csv"));
 		 saver.setFieldSeparator("\t");
 		 saver.writeBatch();
 	}

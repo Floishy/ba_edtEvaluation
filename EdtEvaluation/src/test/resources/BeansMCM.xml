@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    
+    
+    
+    
+    <bean id="linkedDataExpansionTool" class="weka.classifiers.trees.LinkedDataExpansionTool">
+        <property name="testConfiguration" ref="testConfigurationBean" ></property>
+    </bean>
+    
+     <bean id="testConfigurationBean" class="weka.classifiers.trees.TestConfiguration" scope="singleton" >
+     	<!-- The linked data model -->
+        <property name="linkedData" value="F:\\DBPedia\\dbpedia_2015-10.nt"></property>
+        <!-- The ontology model -->
+        <property name="ontModel" value="src/test/resources/swrc_aifb_nov06/swrc_updated_v0.7.1.owl"></property>
+        <!-- the ontology namespace -->
+        <property name="ontologyNS" value="http://swrc.ontoware.org/ontology#"></property>
+        <!-- The csv file -->
+        <property name="csvSource" value="F:\\DBPedia_Data\\MC_Movies\\MC_Movies.csv"></property>
+        <!-- The class index of the test data -->
+        <property name="classIndex" value="3"></property>
+        <!-- <property name="maxHops" value="5"></property> -->
+    </bean>
+    
+     <bean id="hoeffdingTree" class="weka.classifiers.trees.HoeffdingTree" scope="singleton">
+        <property name="expansionTool" ref="linkedDataExpansionTool"> </property>
+        <property name="testConfiguration" ref="testConfigurationBean"> </property>
+        <!-- The split expansion algorithm -->
+        <property name="splitExpandAlgorithm" ref="splitExpandAlgorithm"></property>
+        <!-- The number of instances a leaf should observe between split attempts -->
+        <property name="m_gracePeriod" value="1"></property>
+        <!--The allowable error in a split decision. Values closer to zero will take longer to decide -->
+        <property name="m_splitConfidence" value="0.00001"></property>
+       
+       <!-- NOT USED -->
+        <!-- <property name="m_hoeffdingTieThreshold" value="0.05"></property> -->
+        <!-- The minimum fraction of weight required down at least two branches for info gain splitting -->
+        <property name="m_minFracWeightForTwoBranchesGain" value="0.01"></property>
+    </bean>
+    
+    <bean id="splitExpandAlgorithm" class="weka.classifiers.trees.HoeffdingExpansionSplit">
+    	<!-- The expected entropy reduction -->
+    	<property name="expectedEntropyReduction" value="0.001"> </property>
+    	<!-- The decrease of entropy with every hop -->
+        <property name="hopEntropyDecrease" value="0.1"></property>
+         <!-- Threshold below which an expansion will be forced -->
+        <property name="hoeffdingTieThreshold" value="0.03"></property>
+        <property name="hoeffdingTree" ref="hoeffdingTree"></property>
+    </bean>
+    
+</beans>
