@@ -77,71 +77,19 @@ public class MultiValueFormatter {
 			Calendar cal = Calendar.getInstance();
 			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 			
-	        for(int i =4;i<=4;i++){
-			Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\src\\test\\resources\\MUTAG\\mutagtraining04"+".csv", ",", 2);
+	        for(int i =1;i<=3;i++){
+			Instances res = formatter.loadCSV("F:\\DBPedia_Data\\Cities\\cities0"+i+".csv", "\t", 4);
 			System.out.println(startTime/1000);
-			//System.out.println(res);
-			
-//			System.out.println(res.numAttributes());
-//			System.out.println(res.getM_Attributes().size());
-//			System.out.println(res.instance(0).attribute(132).value(0));
-//			System.out.println(res.instance(0).attribute(132).name());
-//			System.out.println(res.instance(0).numValues());
-//			for(Attribute att : res.getM_Attributes()){
-//				System.out.println(att.type());
-//				if (att.type()==0){
-//					System.out.println(att.name());
-//					System.out.println(att.value(0));
-//				}
-//			}
-			
+
 			//2. format the loaded data with binary sets
 			res = formatter.formatWithBinarySets(res, ";");
 			
 			//System.out.println(res);
 			
-			formatter.saveInstanceToCSV(res,"src/test/resources/MUTAG/",i+"HopsMutagTraining");
+			formatter.saveInstanceToCSV(res,"F:\\DBPedia_Data\\Cities\\",i+"HopsCities");
 			System.out.println((System.currentTimeMillis()-startTime)/1000 );
 	        }
-	        for(int i =4;i<=4;i++){
-				Instances res = formatter.loadCSV("F:\\Workspace_Bachelor_Arbeit\\maven.1482858439171\\EdtEvaluation\\src\\test\\resources\\MUTAG\\mutagtest04"+".csv", ",", 2);
-				System.out.println(startTime/1000);
-				//System.out.println(res);
-				
-//				System.out.println(res.numAttributes());
-//				System.out.println(res.getM_Attributes().size());
-//				System.out.println(res.instance(0).attribute(132).value(0));
-//				System.out.println(res.instance(0).attribute(132).name());
-//				System.out.println(res.instance(0).numValues());
-//				for(Attribute att : res.getM_Attributes()){
-//					System.out.println(att.type());
-//					if (att.type()==0){
-//						System.out.println(att.name());
-//						System.out.println(att.value(0));
-//					}
-//				}
-				
-				//2. format the loaded data with binary sets
-				res = formatter.formatWithBinarySets(res, ";");
-				
-				//System.out.println(res);
-				
-				formatter.saveInstanceToCSV(res,"src/test/resources/MUTAG/",i+"HopsMutagTest");
-				System.out.println((System.currentTimeMillis()-startTime)/1000 );
-		    }
-			//3. output the result to a file (you can not write res.toString() into a csv file!)
-//			formatter.writeFile(res.toString(), "C:\\Users\\philipp\\Desktop\\inst3BS.arff");
-//			
-//			//4. use the result to build a tree (C4.5 or HT)
-//			J48 j48 = new J48();
-//			j48.buildClassifier(res);
-//			
-//			System.out.println();
-//			System.out.println("Tree: " + j48.toString());
-			
-//			HoeffdingTree ht = new HoeffdingTree();
-//			ht.buildClassifier(res);
-//			System.out.println("\n" + ht.toString());
+
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());

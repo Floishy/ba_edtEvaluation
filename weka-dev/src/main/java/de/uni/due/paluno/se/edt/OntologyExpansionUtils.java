@@ -139,7 +139,9 @@ public class OntologyExpansionUtils {
 		
 		Resource resource=getResource(attributeValue);
 		
-		
+		if(attributeValue.contains("Arthur")){
+			System.out.println("Fehler");
+		}
 		
 		//TODO here all instances have to be checked before this exception is thrown
 		if(resource!=null){
@@ -290,6 +292,8 @@ public class OntologyExpansionUtils {
 		int numInstances = inst.numInstances();
 		for(int instancePosition=0;instancePosition<numInstances;instancePosition++) {
 			Set<String> addedAttributes = new HashSet<String>();
+			
+			System.out.println(instancePosition);
 			
 			Instance instance = inst.get(instancePosition);
 			Attribute attribute = instance.attribute(attributePosition);

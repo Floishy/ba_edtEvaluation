@@ -23,9 +23,9 @@
         <!-- the ontology namespace -->
         <property name="ontologyNS" value="http://swrc.ontoware.org/ontology#"></property>
         <!-- The csv file -->
-        <property name="csvSource" value="F:\\DBPedia_Data\\MC_Movies\\MC_Movies.csv"></property>
+        <property name="csvSource" value="F:\\DBPedia_Data\\Cities\\cities.csv"></property>
         <!-- The class index of the test data -->
-        <property name="classIndex" value="3"></property>
+        <property name="classIndex" value="4"></property>
         <!-- <property name="maxHops" value="5"></property> -->
     </bean>
     
