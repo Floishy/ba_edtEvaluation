@@ -293,7 +293,7 @@ public class OntologyExpansionUtils {
 		for(int instancePosition=0;instancePosition<numInstances;instancePosition++) {
 			Set<String> addedAttributes = new HashSet<String>();
 			
-			System.out.println(instancePosition);
+//			System.out.println(instancePosition);
 			
 			Instance instance = inst.get(instancePosition);
 			Attribute attribute = instance.attribute(attributePosition);

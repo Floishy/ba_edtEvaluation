@@ -23,7 +23,7 @@ public class Expanding {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansForbes.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansMCM.xml");
 		TestConfiguration tc = context.getBean(TestConfiguration.class);
 		System.out.println(tc.getCsvSource());
 		CSVLoader trainDataLoader = new CSVLoader();
@@ -79,7 +79,7 @@ public class Expanding {
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("F:\\DBPedia_Data\\Forbes\\forbes0"+i+".csv"));
+		 saver.setFile(new File("F:\\DBPedia_Data\\MC_Movies\\NeuMovies0"+i+".csv"));
 		 saver.setFieldSeparator("\t");
 		 saver.writeBatch();
 	}

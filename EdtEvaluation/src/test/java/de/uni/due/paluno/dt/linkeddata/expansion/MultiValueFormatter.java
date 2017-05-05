@@ -77,19 +77,16 @@ public class MultiValueFormatter {
 			Calendar cal = Calendar.getInstance();
 			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 			
-	        for(int i =1;i<=3;i++){
-			Instances res = formatter.loadCSV("F:\\DBPedia_Data\\Cities\\cities0"+i+".csv", "\t", 4);
+			Instances res4 = formatter.loadCSV("F:\\DBPedia_Data\\MC_Movies\\NeuMovies01"+".csv", "\t", 3);
 			System.out.println(startTime/1000);
 
 			//2. format the loaded data with binary sets
-			res = formatter.formatWithBinarySets(res, ";");
+			res4 = formatter.formatWithBinarySets(res4, ";");
 			
 			//System.out.println(res);
 			
-			formatter.saveInstanceToCSV(res,"F:\\DBPedia_Data\\Cities\\",i+"HopsCities");
+			formatter.saveInstanceToCSV(res4,"F:\\DBPedia_Data\\MC_Movies\\",1+"HopMovies");
 			System.out.println((System.currentTimeMillis()-startTime)/1000 );
-	        }
-
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());
