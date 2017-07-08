@@ -323,7 +323,12 @@ public class OntologyExpansionUtils {
 			catch(Throwable t){
 				continue;
 			}
+			// the § sign needs to be changed
+			if (attributeValue.contains("§")){
+				attributeValue.replaceAll("§", "'");
+			}
 			
+			// Checking if multivalued if so all values have to be expanded
 			String[] multiValue;
 			if (attributeValue.contains(Constants.multiValueSeparator)){
 				multiValue = attributeValue.split(Constants.multiValueSeparator);
@@ -334,7 +339,7 @@ public class OntologyExpansionUtils {
 					newAttributes.putAll((HashMap<String, String[]>)temp.get(1));
 				}
 			}
-			
+			// attribute is not multivalued
 			else{
 				
 				//getResourceAttributes(resourceProperties, orrAttributeName, attributeType, newAttributes, numInstances, instancePosition,attributesToConsider);

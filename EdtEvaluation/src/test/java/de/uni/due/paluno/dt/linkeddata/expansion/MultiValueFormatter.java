@@ -77,7 +77,7 @@ public class MultiValueFormatter {
 			Calendar cal = Calendar.getInstance();
 			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 			
-			Instances res4 = formatter.loadCSV("F:\\DBPedia_Data\\MC_Movies\\NeuMovies01"+".csv", "\t", 3);
+			Instances res4 = formatter.loadCSV("F:\\DBPedia_Data\\MC_Albums\\Albums02"+".csv", "\t", 4);
 			System.out.println(startTime/1000);
 
 			//2. format the loaded data with binary sets
@@ -85,7 +85,7 @@ public class MultiValueFormatter {
 			
 			//System.out.println(res);
 			
-			formatter.saveInstanceToCSV(res4,"F:\\DBPedia_Data\\MC_Movies\\",1+"HopMovies");
+			formatter.saveInstanceToCSV(res4,"F:\\DBPedia_Data\\MC_Albums\\",2+"HopAlbum");
 			System.out.println((System.currentTimeMillis()-startTime)/1000 );
 		}
 		catch (Exception e) {
@@ -497,7 +497,9 @@ public class MultiValueFormatter {
 		for (Attribute attribute : newAttributes) {
 			newAttributeMap.put(attribute.name().trim(), attribute);
 		}
-			
+		
+		int counter = 0;
+		
 		for (weka.core.Instance instance : data) {
 			
 			for(int i = 0; i < instance.numAttributes(); i++) {
@@ -536,9 +538,28 @@ public class MultiValueFormatter {
 						}
 					}
 					
+
+					
+					
 					if(!instanceHasValue)
 						instance.setValue(instance.attribute(i), 0);
 				}
+				
+				if(i == (instance.numAttributes()/2)){
+					System.out.println("Half Attributes");
+					System.out.println((System.currentTimeMillis()-startTime)/1000);
+				}
+				
+			}
+			
+			if(counter == (data.size()/4)){
+				System.out.println("Quater Inst");
+				System.out.println((System.currentTimeMillis()-startTime)/1000);
+			}
+			
+			if(counter == (data.size()/2)){
+				System.out.println("half Inst");
+				System.out.println((System.currentTimeMillis()-startTime)/1000);
 			}
 		}
 		

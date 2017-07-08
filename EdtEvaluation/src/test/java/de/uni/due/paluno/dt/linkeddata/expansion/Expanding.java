@@ -18,15 +18,22 @@ import weka.core.Instances;
 import weka.core.converters.CSVLoader;
 import weka.core.converters.CSVSaver;
 
+/**
+ * The class for expanding a given data set.
+ * It takes a given xml configuration file and generates four hops of the defined data set
+ * @author Florian
+ *
+ */
 public class Expanding {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansMCM.xml");
+		// Loading the Configuration file, one for each data set
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansAAUPWiki.xml");
 		TestConfiguration tc = context.getBean(TestConfiguration.class);
 		System.out.println(tc.getCsvSource());
 		CSVLoader trainDataLoader = new CSVLoader();
+		// Seperator has to be adjusted eihter , or Tab
 		trainDataLoader.setFieldSeparator("\t");
 		trainDataLoader.setSource(new File(tc.getCsvSource()));
 		
@@ -38,7 +45,7 @@ public class Expanding {
 		
 		LinkedDataExpansionTool expansionTool = context.getBean(LinkedDataExpansionTool.class);
 
-		
+		// Expanding the data set 4 times
 		
 		int i=0;
 		while(i<5){
@@ -75,11 +82,13 @@ public class Expanding {
 	
 	}
 	
+	// Output of newly generated data sets, Path has to be adjusted
+	
 	public static void writeTrainData(Instances inst,int i) throws IOException{
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("F:\\DBPedia_Data\\MC_Movies\\NeuMovies0"+i+".csv"));
+		 saver.setFile(new File("F:\\Wikidata\\AAUP\\AAUPWiki0"+i+".csv"));
 		 saver.setFieldSeparator("\t");
 		 saver.writeBatch();
 	}

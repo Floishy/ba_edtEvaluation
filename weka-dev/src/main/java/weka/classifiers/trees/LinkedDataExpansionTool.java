@@ -31,6 +31,10 @@ import de.uni.due.paluno.se.edt.NotAResourceException;
 import de.uni.due.paluno.se.edt.OntologyExpansionUtils;
 
 
+/**
+ * @author Florian
+ *
+ */
 public class LinkedDataExpansionTool implements Serializable{
 
 	/**
@@ -209,10 +213,21 @@ public class LinkedDataExpansionTool implements Serializable{
 		this.testConfiguration = testConfiguration;
 	}
 	
+	
+//	
+	/**
+	 * This method returns the model corresponding to the given owl, nt or DBPedia file
+	 * 
+	 * @return the data model containing information about the graph
+	 */
 	public Model getModel(){
 		if(model==null){
 			if(testConfiguration.getLinkedData().contains("DBPedia")){
 				model = TDBFactory.createDataset(testConfiguration.getLinkedData()).getDefaultModel();
+			}
+			else if (testConfiguration.getLinkedData().contains("Wiki")){
+				model = TDBFactory.createDataset().getDefaultModel();
+				FileManager.get().readModel(model,testConfiguration.getLinkedData());
 			}
 			else{
 				model = TDBFactory.createDataset().getDefaultModel();
