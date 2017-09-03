@@ -28,6 +28,12 @@ import weka.filters.unsupervised.attribute.AddValues;
 import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToNominal;
 
+/**
+ * This class transforms the expanded instances into our binary vector format
+ * 
+ * Set the paths for input and output files and run this
+ *
+ */
 public class MultiValueFormatter {
 	static long startTime = System.currentTimeMillis();
 	public static void main(String[] args)
@@ -37,56 +43,20 @@ public class MultiValueFormatter {
 		
 		try
 		{
-			//formatWithNewInstances test
 			
-//			1. load arff or csv file 
-//			Instances res = formatter.loadCSV("C:\\Users\\philipp\\Desktop\\testCSV datei BA\\inst1.csv", ",", 2);
-//			
-//			System.out.println(res);			
-//			
-//			//2. format the loaded data by splitting the instances
-//			long timer = System.currentTimeMillis();
-//			res = formatter.formatWithNewInstances(res, ";", "$");
-//			
-////			System.out.println(res);
-//			System.out.println("Dauer:" + (System.currentTimeMillis() - timer));
-//			System.out.println("Dauer formatWithNewInstances: " + formatter.timerformatWithNewInstances);
-//			System.out.println("Dauer splitAndAddNewInstances: " + formatter.timersplitAndAddNewInstances);
-//			System.out.println("Dauer splitInstance: " + formatter.timersplitInstance);
-//			System.out.println("Dauer addInstances: " + formatter.timeraddInstances);
-//			System.out.println("Dauer addAttributeValue: " + formatter.timeraddAttributeValue);
-//			System.out.println("Dauer addAttributeValue2: " + formatter.timeraddAttributeValue2);
-//			System.out.println("Dauer addAttributeValue3: " + formatter.timeraddAttributeValue3);
-//			System.out.println("Dauer removeInstances: " + formatter.timerremoveInstances);
-//			System.out.println("Dauer removeInstances2: " + formatter.timerremoveInstances2);
+			// Setting input and output
+			String sourcePath = "F:\\source1.csv";
+			String resultPath = "F:\\results\\AIFB\\";
+			String fileName = "AIFB.csv";
 			
-			//3. output the result to a file (you can not write res.toString() into a csv file!)
-//			formatter.writeFile(res.toString(), "C:\\Users\\philipp\\Desktop\\inst2NI.arff");
-			
-//			4. use the result to build a tree (e.g. C4.5 or HT)
-//			J48 j48 = new J48();
-//			j48.buildClassifier(res);
-//			System.out.println();
-//			System.out.println("Tree: " + j48.toString());
-			
-			
-			
-//			//formatWithBinarySets test
-			
-			//1. load arff or csv file
-			Calendar cal = Calendar.getInstance();
-			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-			
-			Instances res4 = formatter.loadCSV("F:\\DBPedia_Data\\MC_Albums\\Albums02"+".csv", "\t", 4);
-			System.out.println(startTime/1000);
-
+			//1. loading instances
+			Instances res = formatter.loadCSV(sourcePath, ",", 2);
 			//2. format the loaded data with binary sets
-			res4 = formatter.formatWithBinarySets(res4, ";");
+			res = formatter.formatWithBinarySets(res, ";");
 			
 			//System.out.println(res);
 			
-			formatter.saveInstanceToCSV(res4,"F:\\DBPedia_Data\\MC_Albums\\",2+"HopAlbum");
-			System.out.println((System.currentTimeMillis()-startTime)/1000 );
+			formatter.saveInstanceToCSV(res,resultPath,fileName);
 		}
 		catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -95,6 +65,12 @@ public class MultiValueFormatter {
 	}
 	
 	
+	/**
+	 * @param inst instances to be saves
+	 * @param pathPrefix Path of the saved file
+	 * @param filename file Name
+	 * @throws IOException
+	 */
 	public void saveInstanceToCSV(Instances inst,String pathPrefix,String filename) throws IOException{
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
@@ -566,6 +542,13 @@ public class MultiValueFormatter {
 		return data;
 	}
 
+	/**
+	 * @param csvPath Path of the source file
+	 * @param separator attribute and value separator either , ; or \t
+	 * @param classIndex index of classifier
+	 * @return the loaded instances
+	 * @throws Exception
+	 */
 	public Instances loadCSV(String csvPath, String separator, int classIndex) throws Exception	
 	{
 		CSVLoader trainDataLoader = new CSVLoader();

@@ -21,76 +21,70 @@ import weka.core.converters.CSVSaver;
 /**
  * The class for expanding a given data set.
  * It takes a given xml configuration file and generates four hops of the defined data set
- * @author Florian
+ * 
  *
  */
 public class Expanding {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-		// Loading the Configuration file, one for each data set
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeansAAUPWiki.xml");
-		TestConfiguration tc = context.getBean(TestConfiguration.class);
-		System.out.println(tc.getCsvSource());
-		CSVLoader trainDataLoader = new CSVLoader();
-		// Seperator has to be adjusted eihter , or Tab
-		trainDataLoader.setFieldSeparator("\t");
-		trainDataLoader.setSource(new File(tc.getCsvSource()));
 		
-		Instances trainData = trainDataLoader.getDataSet();
-		trainData.setClassIndex(tc.getClassIndex());
+		// Number of hops for the bfs
+		int hops = 4;
 		
+		//Setting the Configuration
+		String beans = "BeansAAUPWiki.xml";
+		String separator = "\t";
 		
+		Instances trainData = loadTrainData(beans,separator);	
+		LinkedDataExpansionTool expansionTool = getExpansionTool(beans);
 		
+		//Setting the output of the expansion
 		
-		LinkedDataExpansionTool expansionTool = context.getBean(LinkedDataExpansionTool.class);
-
-		// Expanding the data set 4 times
+		String path = "F:\\";
+		String fileName = "source";
+		
 		
 		int i=0;
-		while(i<5){
-//			Graph graph = Utils.graph(instance);
-//			graph.display();
-
+		while(i<=hops){
 			
-//			Instance instance = trainData.get(0);
-			
-//			Graph graph = Utils.graph(instance);
-//			graph.display();
-			
-//			int count = graph.getAttributeCount();
-			ArrayList<Attribute> test = trainData.getM_Attributes();
-			
-			for(Attribute att : test){
-				System.out.println(att.name());
-			}
-
 			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
-			 
-			
 			i= i+1;
-			writeTrainData(trainData, i);
-			try {
-				TimeUnit.SECONDS.sleep(5);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
+			writeTrainData(trainData, path, fileName, i);
 		}
 		
 	
 	}
-	
-	// Output of newly generated data sets, Path has to be adjusted
-	
-	public static void writeTrainData(Instances inst,int i) throws IOException{
+		
+	public static void writeTrainData(Instances inst, String path , String file, int i) throws IOException{
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File("F:\\Wikidata\\AAUP\\AAUPWiki0"+i+".csv"));
+		 saver.setFile(new File(path+file+i +".csv"));
 		 saver.setFieldSeparator("\t");
 		 saver.writeBatch();
+	}
+	
+	public static Instances loadTrainData(String beans, String separator) throws IOException{
+		// Loading the Configuration file, one for each data set
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(beans);
+		TestConfiguration tc = context.getBean(TestConfiguration.class);
+		System.out.println(tc.getCsvSource());
+		CSVLoader trainDataLoader = new CSVLoader();
+		
+		// Seperator has to be adjusted eihter , or Tab
+		trainDataLoader.setFieldSeparator(separator);
+		trainDataLoader.setSource(new File(tc.getCsvSource()));
+		
+		Instances trainData = trainDataLoader.getDataSet();
+		trainData.setClassIndex(tc.getClassIndex());
+		return trainData;
+	}
+	
+	public static LinkedDataExpansionTool getExpansionTool(String beans){
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(beans);
+		
+		return context.getBean(LinkedDataExpansionTool.class);
 	}
 }
 
