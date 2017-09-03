@@ -544,7 +544,7 @@ public class MultiValueFormatter {
 
 	/**
 	 * @param csvPath Path of the source file
-	 * @param separator attribute and value separator either , ; or \t
+	 * @param separator attribute and value separator either , or \t
 	 * @param classIndex index of classifier
 	 * @return the loaded instances
 	 * @throws Exception

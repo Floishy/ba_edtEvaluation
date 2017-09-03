@@ -21,8 +21,6 @@ import weka.core.converters.CSVSaver;
 /**
  * The class for expanding a given data set.
  * It takes a given xml configuration file and generates four hops of the defined data set
- * 
- *
  */
 public class Expanding {
 
@@ -42,6 +40,7 @@ public class Expanding {
 		
 		String path = "F:\\";
 		String fileName = "source";
+		String fileFormat = ".csv";
 		
 		
 		int i=0;
@@ -49,18 +48,18 @@ public class Expanding {
 			
 			trainData = expansionTool.expand(trainData,new Attributes(trainData.getM_Attributes()), null);
 			i= i+1;
-			writeTrainData(trainData, path, fileName, i);
+			writeTrainData(trainData, path, fileName, i, fileFormat, separator);
 		}
 		
 	
 	}
 		
-	public static void writeTrainData(Instances inst, String path , String file, int i) throws IOException{
+	public static void writeTrainData(Instances inst, String path , String file, int i, String fileFormat, String separator) throws IOException{
 		CSVSaver saver = new CSVSaver();
 		 //ArffSaver saver = new ArffSaver();
 		 saver.setInstances(inst);
-		 saver.setFile(new File(path+file+i +".csv"));
-		 saver.setFieldSeparator("\t");
+		 saver.setFile(new File(path+file+i +fileFormat));
+		 saver.setFieldSeparator(separator);
 		 saver.writeBatch();
 	}
 	
