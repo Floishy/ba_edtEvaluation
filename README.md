@@ -1,7 +1,8 @@
 # ba_edtEvaluation
 
-This project is the implementation of the poster contribution
+This project is the implementation of my Bachelor Thesis and the poster contribution
 
+    "Auswertung der Performanz der Klassi-fizierung von Entscheidungsbäumen auf Grundlage von Linked Data und der Vergleich zu  einem aktuellen Ansatz im Bereich der Grapheinbettung"
     "Binary Vector based Propositionalization Strategy for Multivalued Relations in Linked Data"
 
 for the ISWC2017 conference.
